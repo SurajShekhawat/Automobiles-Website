@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import VehicleShowcase from "@/components/VehicleShowcase";
 import Footer from "@/components/Footer";
+import SmoothReveal, { RevealItem } from "@/components/SmoothReveal";
 
 export default function Home() {
   return (
@@ -54,37 +55,43 @@ export default function Home() {
         {/* Station 04 // Metallurgy Lab (The Engineering Ledger) */}
         <section className="bg-background py-64 relative overflow-hidden">
           <div className="mx-auto max-w-[1920px] px-6 sm:px-12 relative z-10">
-            <div className="flex flex-col lg:flex-row justify-between items-start gap-12 mb-32">
-               <div>
-                  <span className="text-dossier block mb-8">Engineering Ledger // v2.4</span>
-                  <h2 className="text-industrial text-5xl sm:text-9xl text-foreground">STATION <span className="text-accent">04.</span></h2>
-               </div>
-               <div className="max-w-md text-right">
-                  <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed">
-                    Where raw metallurgy meets surgical precision. Our Lab 04 oversees the structural integrity of every carbon-monocoque weave and titanium alloy commission.
-                  </p>
-               </div>
-            </div>
+            <SmoothReveal stagger>
+              <RevealItem>
+                <div className="flex flex-col lg:flex-row justify-between items-start gap-12 mb-32">
+                   <div>
+                      <span className="text-dossier block mb-8">Engineering Ledger // v2.4</span>
+                      <h2 className="text-industrial text-5xl sm:text-9xl text-foreground">STATION <span className="text-accent">04.</span></h2>
+                   </div>
+                   <div className="max-w-md text-right">
+                      <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed">
+                        Where raw metallurgy meets surgical precision. Our Lab 04 oversees the structural integrity of every carbon-monocoque weave and titanium alloy commission.
+                      </p>
+                   </div>
+                </div>
+              </RevealItem>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-               {[
-                 { title: 'BLOCK_CORE', spec: 'TITANIUM-G5', img: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=2070' },
-                 { title: 'REINFORCEMENT', spec: 'CARBON-3K', img: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=2070' },
-                 { title: 'ASSEMBLY', spec: 'CLEAN_RM_09', img: 'https://images.unsplash.com/photo-1530124560672-99935178619b?q=80&w=2070' },
-                 { title: 'CASTING', spec: 'B_ALLOY_V8', img: 'https://images.unsplash.com/photo-1611015795014-b8160a665b36?q=80&w=2070' }
-               ].map((item, i) => (
-                 <div key={i} className="group relative aspect-square overflow-hidden bg-surface border border-black/5 grayscale hover:grayscale-0 transition-all duration-700">
-                    <img src={item.img} className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000 opacity-60 group-hover:opacity-100" />
-                    <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-background to-transparent opacity-90">
-                       <span className="text-dossier text-[9px] block mb-2 text-accent">[{item.title}]</span>
-                       <span className="text-industrial text-xl text-foreground">{item.spec}</span>
-                    </div>
-                    <div className="absolute top-8 right-8 text-[8px] font-bold text-foreground opacity-20 group-hover:opacity-100 transition-opacity">
-                       SYS.REF.{i+100}
-                    </div>
-                 </div>
-               ))}
-            </div>
+              <RevealItem>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                   {[
+                     { title: 'BLOCK_CORE', spec: 'TITANIUM-G5', img: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=2070' },
+                     { title: 'REINFORCEMENT', spec: 'CARBON-3K', img: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=2070' },
+                     { title: 'ASSEMBLY', spec: 'CLEAN_RM_09', img: 'https://images.unsplash.com/photo-1530124560672-99935178619b?q=80&w=2070' },
+                     { title: 'CASTING', spec: 'B_ALLOY_V8', img: 'https://images.unsplash.com/photo-1611015795014-b8160a665b36?q=80&w=2070' }
+                   ].map((item, i) => (
+                     <div key={i} className="group relative aspect-square overflow-hidden bg-surface border border-black/5 grayscale hover:grayscale-0 transition-all duration-700">
+                        <img src={item.img} className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000 opacity-60 group-hover:opacity-100" />
+                        <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-background to-transparent opacity-90">
+                           <span className="text-dossier text-[9px] block mb-2 text-accent">[{item.title}]</span>
+                           <span className="text-industrial text-xl text-foreground">{item.spec}</span>
+                        </div>
+                        <div className="absolute top-8 right-8 text-[8px] font-bold text-foreground opacity-20 group-hover:opacity-100 transition-opacity">
+                           SYS.REF.{i+100}
+                        </div>
+                     </div>
+                   ))}
+                </div>
+              </RevealItem>
+            </SmoothReveal>
           </div>
         </section>
 

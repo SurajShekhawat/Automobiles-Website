@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   description: "Curators of the world's finest automotive engineering since 1924. Experience the intersection of machinery and legacy.",
 };
 
+import LenisProvider from "@/components/LenisProvider";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -28,7 +30,11 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <LenisProvider>
+          {children}
+        </LenisProvider>
+      </body>
     </html>
   );
 }
