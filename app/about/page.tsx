@@ -2,47 +2,64 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-export default function AboutPage() {
+export default function About() {
   return (
-    <div className="flex flex-col min-h-screen bg-background">
+    <div className="flex flex-col min-h-screen bg-background text-foreground relative">
+      <div className="grain" />
       <Navbar />
-      <main className="flex-1 pt-32 sm:pt-40 pb-32">
-        {/* Hero Section */}
-        <section className="px-6 sm:px-12 mb-32">
-          <div className="max-w-7xl mx-auto border-b border-accent/10 pb-16 sm:pb-24">
-            <h1 className="text-editorial text-4xl sm:text-8xl font-bold text-foreground mb-8 sm:mb-12">
-              Heritage <br className="hidden sm:block" /> <span className="italic text-accent/20" style={{ WebkitTextStroke: '1px rgba(181, 154, 109, 0.4)' }}>& History</span>
-            </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 items-start">
-              <p className="text-muted text-sm sm:text-lg leading-relaxed font-medium">
-                Founded in London in 1924, Zenith began as a small boutique specializing in the preservation of European Grand Tourers. Over a century, we have evolved into a global authority on automotive excellence, curating a living collection of the most significant machines ever built.
-              </p>
-              <div className="text-muted text-xs sm:text-sm italic border-l border-accent/20 pl-6 sm:pl-8">
-                "We don't just sell cars; we preserve the physical manifestation of human ambition."
-                <span className="block mt-4 font-bold uppercase not-italic text-foreground tracking-widest text-[9px] sm:text-[10px]">Founder, Arthur Zenith</span>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        {/* Vision Section */}
-        <section className="bg-surface py-32 px-6 sm:px-12 bg-texture">
-          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
-            <div>
-              <h3 className="text-[10px] font-bold tracking-[0.4em] uppercase text-accent mb-6 underline underline-offset-8">01 / Selection</h3>
-              <p className="text-xs text-muted leading-relaxed font-medium">Only 12 vehicles are admitted to our permanent collection each year. Scarcity is our standard.</p>
-            </div>
-            <div>
-              <h3 className="text-[10px] font-bold tracking-[0.4em] uppercase text-accent mb-6 underline underline-offset-8">02 / Purity</h3>
-              <p className="text-xs text-muted leading-relaxed font-medium">We focus on machines that represent a pure mechanical or technological breakthrough.</p>
-            </div>
-            <div>
-              <h3 className="text-[10px] font-bold tracking-[0.4em] uppercase text-accent mb-6 underline underline-offset-8">03 / Legacy</h3>
-              <p className="text-xs text-muted leading-relaxed font-medium">Our relationship with clients spans generations, ensuring the legacy of each vehicle continues.</p>
-            </div>
+      <main className="flex-1 pt-32 sm:pt-48 pb-24 px-6 sm:px-12 bg-blueprint">
+        <div className="mx-auto max-w-[1920px]">
+          
+          <div className="flex flex-col lg:flex-row gap-32 mb-64 items-start">
+             <div className="lg:sticky lg:top-48 lg:w-1/3">
+                <div className="flex items-center gap-4 mb-12">
+                  <span className="text-dossier">Archive / Heritage</span>
+                  <div className="h-px w-24 bg-accent/20" />
+                </div>
+                <h1 className="text-industrial text-7xl sm:text-[10rem] text-foreground leading-[0.8] tracking-tighter mb-16">
+                  CENTURY <br /> <span className="text-accent italic">STUDIO.</span>
+                </h1>
+                <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed max-w-sm mb-12">
+                  The chronicle of Zenith is not merely a timeline of dates, but a preservation of mechanical soul. Founded in 1924, our mission remains unchanged: to curate the intersection of engineering and emotion.
+                </p>
+             </div>
+
+             <div className="flex-1 space-y-32">
+                <div className="relative aspect-video bg-surface overflow-hidden border border-black/10">
+                   <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale opacity-80" />
+                   <div className="absolute top-12 left-12 text-dossier bg-background/50 backdrop-blur-sm p-4">Station No. 001 // Restoration Lab</div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                   <div className="p-12 border border-black/10 bg-surface/30 backdrop-blur-sm">
+                      <span className="text-dossier block mb-8 underline underline-offset-8">01. Originality</span>
+                      <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed">
+                        We believe in period-correct metallurgy. Every machine processed in our atelier is restored using materials and techniques authentic to its specific era of engineering.
+                      </p>
+                   </div>
+                   <div className="p-12 border border-black/10 bg-surface/30 backdrop-blur-sm">
+                      <span className="text-dossier block mb-8 underline underline-offset-8">02. Evolution</span>
+                      <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed">
+                        Legacy is not static. Our Innovation Lab explores how performance heritage can thrive in a carbon-neutral future without sacrificing the visceral mechanical experience.
+                      </p>
+                   </div>
+                </div>
+
+                <div className="relative aspect-square sm:aspect-[21/9] bg-surface overflow-hidden border border-black/10">
+                   <img src="https://images.unsplash.com/photo-1541443131876-44b03de101c5?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale opacity-20 hover:opacity-100 transition-all duration-[2s]" />
+                   <div className="absolute bottom-12 right-12 text-industrial text-8xl text-accent/10 italic">THE LAB</div>
+                </div>
+             </div>
           </div>
-        </section>
+
+          <div className="text-center py-32 border-t border-black/10">
+             <span className="text-dossier block mb-12">Access Protocol Completed</span>
+             <h2 className="text-industrial text-4xl sm:text-7xl text-foreground">A Legacy in <span className="text-accent">Motion.</span></h2>
+          </div>
+        </div>
       </main>
+
       <Footer />
     </div>
   );

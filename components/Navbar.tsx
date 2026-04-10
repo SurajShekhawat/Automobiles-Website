@@ -9,34 +9,37 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center p-6 sm:p-10 pointer-events-none">
-        <div className="glass flex w-full max-w-6xl items-center justify-between rounded-full px-6 py-4 sm:px-12 pointer-events-auto border border-white/20">
+      <nav className="fixed top-0 left-0 right-0 z-[100] bg-background/80 backdrop-blur-md border-b border-black/5 px-6 sm:px-12 py-6">
+        <div className="mx-auto flex w-full max-w-[1920px] items-center justify-between">
           
-          {/* Left: Navigation (Desktop) */}
-          <div className="hidden flex-1 sm:flex gap-10 text-[10px] font-bold tracking-[0.4em] uppercase text-muted">
-            <Link href="/inventory" className="hover:text-accent transition-colors">Showcase</Link>
-            <Link href="/about" className="hover:text-accent transition-colors">Heritage</Link>
-            <Link href="/contact" className="hover:text-accent transition-colors">Inquire</Link>
-          </div>
+          <Link href="/" className="text-industrial text-3xl sm:text-4xl text-foreground hover:italic transition-all">
+            ZENITH
+          </Link>
 
-          {/* Center: Branding */}
-          <div className="flex-none sm:flex-1 flex justify-center">
-            <Link href="/" className="font-serif text-2xl font-bold tracking-tight text-foreground sm:text-3xl hover:italic transition-all">
-              ZENITH
+          {/* Center: Monospace Nav (Desktop) */}
+          <div className="hidden lg:flex gap-12">
+            <Link href="/inventory" className="text-dossier group flex items-baseline gap-2 hover:text-foreground transition-colors">
+              <span className="text-[8px] opacity-20">01.</span> Showcase
+            </Link>
+            <Link href="/about" className="text-dossier group flex items-baseline gap-2 hover:text-foreground transition-colors">
+              <span className="text-[8px] opacity-20">02.</span> Heritage
+            </Link>
+            <Link href="/contact" className="text-dossier group flex items-baseline gap-2 hover:text-foreground transition-colors">
+              <span className="text-[8px] opacity-20">03.</span> Inquire
             </Link>
           </div>
 
-          {/* Right: CTA & Mobile Toggle */}
-          <div className="flex-1 flex justify-end items-center gap-6">
-            <button className="hidden md:block bg-foreground text-background px-8 py-3 rounded-full text-[10px] font-bold tracking-[0.4em] uppercase transition-all hover:bg-accent hover:scale-105 active:scale-95 duration-500">
-              Reservations
-            </button>
+          <div className="flex items-center gap-8">
+            <div className="hidden md:flex flex-col text-[8px] font-bold tracking-[0.4em] uppercase text-accent/60 text-right">
+              Archive v.2.0 <br />
+              <span className="text-accent underline decoration-accent/30">Access Restricted</span>
+            </div>
             <button 
               onClick={() => setIsMenuOpen(true)}
-              className="group flex flex-col gap-1.5 p-2"
+              className="flex flex-col gap-1.5"
             >
-              <span className="h-[2px] w-6 bg-foreground rounded-full transition-all group-hover:w-8" />
-              <span className="h-[2px] w-8 bg-foreground rounded-full transition-all group-hover:w-6" />
+              <div className="h-px w-8 bg-foreground" />
+              <div className="h-px w-5 bg-foreground self-end" />
             </button>
           </div>
         </div>

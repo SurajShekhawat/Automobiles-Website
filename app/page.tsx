@@ -6,268 +6,218 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-background text-foreground selection:bg-accent selection:text-background">
+    <div className="flex flex-col min-h-screen bg-background text-foreground selection:bg-accent selection:text-background relative">
+      <div className="grain" />
       <Navbar />
       
       <main className="flex-1">
         <Hero />
         
-        {/* Heritage Section (Minimalist snippet) */}
-        <section className="bg-background py-48 px-6 sm:px-12 relative overflow-hidden bg-texture">
-          <div className="mx-auto max-w-7xl relative z-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-32 items-center">
-              <div>
-                <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-accent block mb-10">Historical Context / Archive</span>
-                <h2 className="text-4xl sm:text-7xl font-serif italic text-accent/40 leading-[0.9] mb-12">
-                  A century of <br /> <span className="text-foreground">mechanical poetry.</span>
+        {/* Heritage Section (Declassified Document style) */}
+        <section className="bg-background py-64 px-6 sm:px-24 relative overflow-hidden bg-blueprint border-y border-black/5">
+          <div className="mx-auto max-w-[1920px] relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-24 items-start">
+              <div className="lg:col-span-5">
+                <div className="flex items-center gap-4 mb-12">
+                  <span className="text-dossier">Dossier / 001-H</span>
+                  <div className="h-px w-24 bg-accent/20" />
+                </div>
+                <h2 className="text-industrial text-6xl sm:text-[10rem] text-foreground leading-[0.75] mb-16">
+                  CENTURY OF <br /> <span className="text-accent italic">MECHANICS.</span>
                 </h2>
-                <p className="text-muted text-sm leading-relaxed max-w-md mb-12 font-medium">
-                  Zenith began as a restoration atelier in post-war London. Today, we are curators of an evolving legacy. We don't just find cars; we find stories that are waiting to be continued in a modern context.
-                </p>
-                <Link href="/about" className="inline-block border-b border-accent/30 pb-3 text-[10px] font-bold tracking-[0.4em] uppercase hover:text-accent hover:border-accent transition-all duration-500">
-                  Discover Our History
-                </Link>
+                <div className="pl-12 border-l border-accent/20">
+                  <p className="text-muted text-sm leading-relaxed max-w-md mb-12 uppercase tracking-widest font-medium">
+                    Zenith began as a restoration atelier in post-war London. Today, we are curators of an evolving legacy. We don't just find cars; we find stories that are waiting to be continued in a modern context.
+                  </p>
+                  <Link href="/about" className="text-dossier underline underline-offset-8 hover:text-foreground transition-colors">
+                    Access Full Archive // Hist
+                  </Link>
+                </div>
               </div>
-              <div className="relative aspect-[4/5] bg-surface overflow-hidden border border-accent/10">
-                <img 
-                  src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop" 
-                  alt="Classic Car Detail"
-                  className="w-full h-full object-cover grayscale opacity-70 hover:opacity-100 transition-all duration-[2s]"
-                />
+              <div className="lg:col-span-7 relative">
+                <div className="relative aspect-[16/10] bg-surface overflow-hidden grayscale border border-white/5">
+                  <img 
+                    src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop" 
+                    alt="Classic Car Detail"
+                    className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-all duration-[2s]"
+                  />
+                </div>
+                {/* Asymmetric Overlay */}
+                <div className="absolute -bottom-12 -left-12 bg-accent p-12 hidden lg:block">
+                  <span className="text-background text-industrial text-5xl">REF. 1924</span>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Lifestyle Gallery Section */}
-        <section className="bg-surface py-24 sm:py-48 px-6 sm:px-12">
-           <div className="mx-auto max-w-7xl">
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12">
-                 <div className="md:col-span-8 relative aspect-video bg-background overflow-hidden border border-accent/5">
-                    <img 
-                      src="https://images.unsplash.com/photo-1621135802920-133df287f89c?q=80&w=2070&auto=format&fit=crop" 
-                      alt="Lifestyle 1"
-                      className="w-full h-full object-cover brightness-75 hover:brightness-100 transition-transform duration-[2s] hover:scale-110"
-                    />
-                 </div>
-                 <div className="md:col-span-4 relative aspect-[4/5] md:aspect-auto bg-background overflow-hidden border border-accent/5">
-                    <img 
-                      src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070&auto=format&fit=crop" 
-                      alt="Lifestyle 2"
-                      className="w-full h-full object-cover brightness-75 hover:brightness-100 transition-transform duration-[2s] hover:scale-110"
-                    />
-                 </div>
-                 <div className="md:col-span-4 relative aspect-[4/5] md:aspect-auto bg-background overflow-hidden border border-accent/5">
-                    <img 
-                      src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=2070&auto=format&fit=crop" 
-                      alt="Lifestyle 3"
-                      className="w-full h-full object-cover brightness-75 hover:brightness-100 transition-transform duration-[2s] hover:scale-110"
-                    />
-                 </div>
-                 <div className="md:col-span-8 relative aspect-video bg-background overflow-hidden border border-accent/5">
-                    <img 
-                      src="https://images.unsplash.com/photo-1611016186353-9af58c69a533?q=80&w=2070&auto=format&fit=crop" 
-                      alt="Lifestyle 4"
-                      className="w-full h-full object-cover brightness-75 hover:brightness-100 transition-transform duration-[2s] hover:scale-110"
-                    />
-                 </div>
-              </div>
-           </div>
-        </section>
-
-        {/* Global Hubs Section */}
-        <section className="bg-background py-24 sm:py-48 border-b border-accent/10 relative overflow-hidden bg-texture">
-          <div className="mx-auto max-w-7xl px-6 sm:px-12 relative z-10">
-            <div className="mb-24 text-center">
-              <h2 className="text-4xl sm:text-8xl font-serif italic text-accent/20 mb-8 capitalize leading-none">Global Network</h2>
-              <p className="text-accent text-[10px] sm:text-xs tracking-[0.5em] uppercase font-bold">London / Milan / Tokyo</p>
+        {/* Station 04 // Metallurgy Lab (The Engineering Ledger) */}
+        <section className="bg-background py-64 relative overflow-hidden">
+          <div className="mx-auto max-w-[1920px] px-6 sm:px-12 relative z-10">
+            <div className="flex flex-col lg:flex-row justify-between items-start gap-12 mb-32">
+               <div>
+                  <span className="text-dossier block mb-8">Engineering Ledger // v2.4</span>
+                  <h2 className="text-industrial text-5xl sm:text-9xl text-foreground">STATION <span className="text-accent">04.</span></h2>
+               </div>
+               <div className="max-w-md text-right">
+                  <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed">
+                    Where raw metallurgy meets surgical precision. Our Lab 04 oversees the structural integrity of every carbon-monocoque weave and titanium alloy commission.
+                  </p>
+               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
-              <div className="group hidden sm:block">
-                <div className="relative aspect-[3/4] bg-surface overflow-hidden mb-8 border border-accent/5">
-                  <img src="https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-[1.5s]" />
-                </div>
-                <h3 className="font-bold text-[11px] uppercase tracking-[0.4em] text-foreground mb-4">London / Mayfair HQ</h3>
-                <p className="text-muted text-[11px] leading-relaxed font-medium">Historical Archive & Bespoke Restoration Atelier.</p>
-              </div>
-              <div className="group">
-                <div className="relative aspect-[3/4] bg-surface overflow-hidden mb-8 border border-accent/5">
-                  <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-[1.5s]" />
-                </div>
-                <h3 className="font-bold text-[11px] uppercase tracking-[0.4em] text-foreground mb-4">Milan / Styling</h3>
-                <p className="text-muted text-[11px] leading-relaxed font-medium">Industrial Design & Creative Commission Studio.</p>
-              </div>
-              <div className="group hidden sm:block">
-                <div className="relative aspect-[3/4] bg-surface overflow-hidden mb-8 border border-accent/5">
-                  <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2071&auto=format&fit=crop" className="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-[1.5s]" />
-                </div>
-                <h3 className="font-bold text-[11px] uppercase tracking-[0.4em] text-foreground mb-4">Tokyo / Lab</h3>
-                <p className="text-muted text-[11px] leading-relaxed font-medium">Advanced Materials & Future Mobility Laboratory.</p>
-              </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+               {[
+                 { title: 'BLOCK_CORE', spec: 'TITANIUM-G5', img: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=2070' },
+                 { title: 'REINFORCEMENT', spec: 'CARBON-3K', img: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=2070' },
+                 { title: 'ASSEMBLY', spec: 'CLEAN_RM_09', img: 'https://images.unsplash.com/photo-1530124560672-99935178619b?q=80&w=2070' },
+                 { title: 'CASTING', spec: 'B_ALLOY_V8', img: 'https://images.unsplash.com/photo-1611015795014-b8160a665b36?q=80&w=2070' }
+               ].map((item, i) => (
+                 <div key={i} className="group relative aspect-square overflow-hidden bg-surface border border-black/5 grayscale hover:grayscale-0 transition-all duration-700">
+                    <img src={item.img} className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000 opacity-60 group-hover:opacity-100" />
+                    <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-background to-transparent opacity-90">
+                       <span className="text-dossier text-[9px] block mb-2 text-accent">[{item.title}]</span>
+                       <span className="text-industrial text-xl text-foreground">{item.spec}</span>
+                    </div>
+                    <div className="absolute top-8 right-8 text-[8px] font-bold text-foreground opacity-20 group-hover:opacity-100 transition-opacity">
+                       SYS.REF.{i+100}
+                    </div>
+                 </div>
+               ))}
             </div>
           </div>
         </section>
 
+        {/* The Boutique / Showcase */}
         <VehicleShowcase />
 
-        {/* The Technology Lab Section */}
-        <section className="bg-surface py-48 px-6 sm:px-12 relative">
-          <div className="mx-auto max-w-7xl">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-32 items-center">
-               <div className="relative aspect-square bg-background overflow-hidden order-last md:order-first border border-accent/10">
-                   <img src="https://images.unsplash.com/photo-1541443131876-44b03de101c5?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover opacity-40 grayscale group-hover:opacity-100 transition-opacity duration-[2s]" />
-                   <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80" />
-               </div>
-               <div>
-                  <span className="text-[10px] font-bold tracking-[0.6em] uppercase text-accent/50 block mb-10 underline underline-offset-8">Innovation / Future</span>
-                  <h2 className="text-5xl sm:text-8xl font-serif italic mb-10 leading-[0.85] text-foreground">Engineering <br /> <span className="text-accent underline decoration-accent/10 decoration-8 underline-offset-[-2px]">Pure Motion.</span></h2>
-                  <p className="text-muted text-sm leading-relaxed max-w-md mb-16 font-medium">
-                     At the Zenith Innovation Lab, we don't just restore the past; we engineer the future of high-performance mechanics. Our proprietary carbon-neutral restoration processes ensure legacy machines remain operational for the centuries to come.
+        {/* Archival Intelligence (Zenith Journal) */}
+        <section className="bg-background py-64 relative overflow-hidden bg-blueprint">
+          <div className="mx-auto max-w-[1920px] px-6 sm:px-24 relative z-10">
+            <div className="flex flex-col md:flex-row gap-24 items-end mb-48">
+               <h2 className="text-industrial text-7xl sm:text-[12rem] text-foreground leading-[0.75]">
+                 ARCHIVAL <br /> <span className="text-accent italic">INTELLIGENCE.</span>
+               </h2>
+               <div className="pb-4">
+                  <span className="text-dossier block mb-4">Edition // 004/26</span>
+                  <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed max-w-[280px]">
+                    Exploring the intersection of mechanical heritage and evolving digital mobility.
                   </p>
-                  <div className="flex gap-16 text-[10px] font-bold tracking-[0.4em] uppercase">
-                     <div className="flex flex-col gap-4">
-                        <span className="text-foreground text-2xl font-serif italic">99%</span>
-                        <span className="text-accent/40">Aerodynamic <br /> Purity rating</span>
+               </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-12 gap-y-32">
+               <div className="md:col-span-7 group cursor-pointer">
+                  <div className="relative aspect-[16/9] mb-8 overflow-hidden bg-surface grayscale group-hover:grayscale-0 transition-all duration-700">
+                     <img src="https://images.unsplash.com/photo-1560570803-7474c0f9af99?q=80&w=2070" className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105" />
+                  </div>
+                  <span className="text-dossier text-accent mb-4 block underline underline-offset-8">Feature // Hist.Registry</span>
+                  <h3 className="text-industrial text-4xl sm:text-6xl text-foreground mb-6">THE ART OF THE <br /> ANALOG OVERHAUL</h3>
+                  <p className="text-muted text-xs uppercase tracking-[0.2em] mb-8 max-w-xl">
+                    Inside the restoration of the 1974 RS Carrera chassis #0092. A deep dive into period-correct metallurgy and the digital preservation of mechanical DNA.
+                  </p>
+                  <span className="text-dossier text-[8px] opacity-40">READ DURATION: 12 MINS // ARCH_ACCESS: GRANTED</span>
+               </div>
+
+               <div className="md:col-span-4 md:col-start-9 flex flex-col gap-32">
+                  <div className="group cursor-pointer">
+                     <div className="relative aspect-square mb-8 overflow-hidden bg-surface grayscale group-hover:grayscale-0 transition-all duration-700">
+                        <img src="https://images.unsplash.com/photo-1544256718-3bcf237f3974?q=80&w=2070" className="w-full h-full object-cover" />
                      </div>
-                     <div className="flex flex-col gap-4">
-                        <span className="text-foreground text-2xl font-serif italic">Zero</span>
-                        <span className="text-accent/40">Carbon <br /> footprint target</span>
+                     <span className="text-dossier text-accent mb-2 block">Protocol // Design</span>
+                     <h4 className="text-industrial text-3xl text-foreground">FUTURE PROOFING <br /> THE V12 HEART</h4>
+                  </div>
+
+                  <div className="group cursor-pointer">
+                     <div className="relative aspect-square mb-8 overflow-hidden bg-surface grayscale group-hover:grayscale-0 transition-all duration-700">
+                        <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=2070" className="w-full h-full object-cover" />
                      </div>
+                     <span className="text-dossier text-accent mb-2 block">Archive // Discovery</span>
+                     <h4 className="text-industrial text-3xl text-foreground">THE STUTTGART <br /> SURVIVOR PAPERS</h4>
                   </div>
                </div>
             </div>
           </div>
         </section>
 
-        {/* Founder's Perspective Section */}
-        <section className="bg-background py-48 px-6 sm:px-12 relative bg-texture">
-          <div className="mx-auto max-w-5xl text-center relative z-10">
-            <span className="text-[11px] font-bold tracking-[0.6em] text-accent uppercase block mb-16 italic">Director's Vision</span>
-            <blockquote className="text-3xl sm:text-6xl font-serif italic text-foreground leading-[1.1] mb-16 max-w-4xl mx-auto">
-              "We believe a car is not a tool, but a dialogue between the road and the soul. <span className="text-accent/50">Our mission is to ensure that dialogue never goes silent."</span>
-            </blockquote>
-            <div className="h-[1px] w-32 bg-accent/20 mx-auto mb-16" />
-            <p className="text-muted text-[11px] font-bold tracking-[0.5em] uppercase"> Arthur Zenith / Founder & Curator </p>
+        {/* Global Hubs (Technical Strip) */}
+        <section className="bg-surface py-48 relative overflow-hidden border-b border-black/5">
+          <div className="absolute top-1/2 left-0 w-full h-[1px] bg-accent/10 -translate-y-1/2" />
+          <div className="mx-auto max-w-[1920px] px-6 sm:px-12 relative z-10">
+            <div className="flex flex-col lg:flex-row justify-between items-end gap-12 mb-32">
+              <h2 className="text-industrial text-5xl sm:text-8xl text-accent/50 italic">Global Distribution</h2>
+              <div className="text-right">
+                <span className="text-dossier block mb-2">Network Status</span>
+                <span className="text-foreground font-bold tracking-[0.5em] uppercase text-[10px]">Operational / Worldwide</span>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-black/5 divide-x divide-black/5">
+              {[
+                { city: 'London', role: 'Mayfair HQ / Arch', img: 'https://images.unsplash.com/photo-1526129318478-62ed807ebdf9' },
+                { city: 'Milan', role: 'Design / Commission', img: 'https://images.unsplash.com/photo-1505761671935-60b3a7427bad' },
+                { city: 'Tokyo', role: 'Lab / Mobility', img: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf' }
+              ].map((hub, i) => (
+                <div key={i} className="group relative aspect-[3/4] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+                  <img src={`${hub.img}?q=80&w=2070&auto=format&fit=crop`} className="w-full h-full object-cover opacity-30 group-hover:opacity-100 transition-all duration-1000 scale-110 group-hover:scale-100" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90" />
+                  <div className="absolute bottom-12 left-12">
+                    <span className="text-dossier block mb-2">{hub.role}</span>
+                    <h3 className="text-industrial text-4xl text-foreground">{hub.city}</h3>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
-        {/* The Atelier Section */}
-        <section className="bg-background py-32 sm:py-56 border-y border-accent/10 relative overflow-hidden">
-           <div className="absolute inset-0 bg-texture opacity-30" />
-           <div className="mx-auto max-w-7xl px-6 sm:px-12 relative z-10">
-              <div className="flex flex-col lg:flex-row gap-32 items-center">
-                 <div className="flex-1">
-                    <span className="text-[10px] font-bold tracking-[0.5em] text-accent uppercase block mb-10">The Atelier</span>
-                    <h2 className="text-4xl sm:text-7xl font-serif italic text-foreground leading-[1.1] mb-12">
-                       The architecture <br /> of obsession.
-                    </h2>
-                    <p className="text-muted text-sm leading-relaxed max-w-lg mb-16 font-medium">
-                       In our Mayfair atelier, we don't just assemble machines; we sculpt them. Every stitch in the hand-selected leather and every polished surface of the mechanical heart is a testament to our relentless pursuit of perfection. Precision is our baseline; soul is our objective.
+        {/* The Commissioning Protocol (Process) */}
+        <section className="bg-background py-64 relative overflow-hidden border-b border-black/10">
+           <div className="mx-auto max-w-[1920px] px-6 sm:px-12 relative z-10">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-24">
+                 <div className="lg:col-span-4">
+                    <span className="text-dossier block mb-12">Restoration Protocol // 2026</span>
+                    <h2 className="text-industrial text-7xl text-foreground leading-tight mb-16">THE <br /> <span className="text-accent">PROCESS.</span></h2>
+                    <p className="text-muted text-xs uppercase tracking-widest leading-relaxed max-w-sm">
+                       Every commission follows a clinical restoration protocol designed to maximize mechanical integrity while preserving the machine's historical soul.
                     </p>
-                    <div className="grid grid-cols-2 gap-12 border-t border-accent/10 pt-16">
-                       <div>
-                          <h4 className="text-[11px] font-bold uppercase tracking-[0.4em] text-accent mb-4">Originality</h4>
-                          <p className="text-muted text-[11px] font-medium leading-relaxed">99% Restoration Accuracy to original period specifications.</p>
-                       </div>
-                       <div>
-                          <h4 className="text-[11px] font-bold uppercase tracking-[0.4em] text-accent mb-4">Hand-Crafted</h4>
-                          <p className="text-muted text-[11px] font-medium leading-relaxed">Over 12,000 work hours dedicated to every single commission.</p>
-                       </div>
-                    </div>
                  </div>
-                 <div className="flex-1 grid grid-cols-2 gap-6 relative">
-                    <div className="absolute -inset-4 border border-accent/5 -z-10 translate-x-4 translate-y-4" />
-                    <div className="relative aspect-[3/4] overflow-hidden bg-surface group">
-                       <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale opacity-50 group-hover:opacity-80 group-hover:scale-110 transition-all duration-[1.5s]" />
-                    </div>
-                    <div className="relative aspect-[3/4] overflow-hidden bg-surface mt-16 group">
-                       <img src="https://images.unsplash.com/photo-1517524008436-bbdb53c248b1?q=80&w=1974&auto=format&fit=crop" className="w-full h-full object-cover grayscale opacity-50 group-hover:opacity-80 group-hover:scale-110 transition-all duration-[1.5s]" />
-                    </div>
+
+                 <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-24">
+                    {[
+                      { step: '01', title: 'Forensic Audit', desc: 'Disassembly and cataloging of every mechanical component to verify period-correct metallurgy.' },
+                      { step: '02', step_name: 'Metal & Core', desc: 'Structural restoration of the monocoque using carbon-fiber weaving and titanium structural bonding.' },
+                      { step: '03', title: 'Analog Tuning', desc: 'Master-level calibration of engines and transmission systems to Zenith high-performance standards.' },
+                      { step: '04', title: 'Archive Release', desc: 'Final technical documentation and digital archival before delivery to the global registry.' }
+                    ].map((item, i) => (
+                      <div key={i} className="relative pl-12 border-l border-black/5">
+                         <span className="text-accent text-industrial text-3xl block mb-6">{item.step}</span>
+                         <h4 className="text-industrial text-xl text-foreground mb-4">{item.title || item.step_name}</h4>
+                         <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed">{item.desc}</p>
+                      </div>
+                    ))}
                  </div>
               </div>
            </div>
         </section>
 
-        {/* Bespoke Services Section */}
-        <section className="bg-surface py-24 sm:py-48 px-6 sm:px-12">
-          <div className="mx-auto max-w-7xl text-center">
-             <h2 className="text-editorial text-5xl sm:text-9xl font-bold mb-24 uppercase tracking-tighter text-foreground">Bespoke <span className="italic text-accent/10">Commission</span></h2>
-             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
-                <div className="relative p-12 min-h-[400px] flex flex-col justify-end overflow-hidden group border border-accent/5">
-                   <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=2070&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-60 group-hover:scale-110 transition-all duration-[1s] grayscale" />
-                   <div className="relative z-10">
-                      <h3 className="font-bold mb-6 uppercase tracking-[0.4em] text-[11px] text-accent">Acquisition</h3>
-                      <p className="text-muted text-sm leading-relaxed font-medium">A clandestine global network for sourcing the rarest machines in automotive history.</p>
-                   </div>
-                </div>
-                <div className="relative p-12 min-h-[400px] flex flex-col justify-end overflow-hidden group border border-accent/5">
-                   <img src="https://images.unsplash.com/photo-1517524008436-bbdb53c248b1?q=80&w=1974&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-60 group-hover:scale-110 transition-all duration-[1s] grayscale" />
-                   <div className="relative z-10">
-                      <h3 className="font-bold mb-6 uppercase tracking-[0.4em] text-[11px] text-accent">Restoration</h3>
-                      <p className="text-muted text-sm leading-relaxed font-medium">Master craftsmen dedicated to original specifications and period-correct metallurgy.</p>
-                   </div>
-                </div>
-                <div className="relative p-12 min-h-[400px] flex flex-col justify-end overflow-hidden group border border-accent/5">
-                   <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=2070&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-60 group-hover:scale-110 transition-all duration-[1s] grayscale" />
-                   <div className="relative z-10">
-                      <h3 className="font-bold mb-6 uppercase tracking-[0.4em] text-[11px] text-accent">Management</h3>
-                      <p className="text-muted text-sm leading-relaxed font-medium">White-glove, secure global logistics for high-value automotive assets and private collections.</p>
-                   </div>
-                </div>
-             </div>
-          </div>
-        </section>
-
-        {/* The Journal Section */}
-        <section className="bg-background py-32 sm:py-56 px-6 sm:px-12 relative">
-           <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
-           <div className="mx-auto max-w-7xl">
-              <div className="flex flex-col md:flex-row items-baseline justify-between mb-24 gap-8">
-                 <h2 className="text-editorial text-5xl sm:text-9xl font-bold italic text-accent/[0.08] leading-none">The Journal</h2>
-                 <p className="text-[10px] font-bold tracking-[0.5em] text-accent uppercase">Vol. IV / Winter Edition</p>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8">
-                 <div className="group cursor-pointer">
-                    <div className="relative aspect-[16/10] overflow-hidden mb-10 border border-accent/5">
-                       <img src="https://images.unsplash.com/photo-1542362567-b055002b91f4?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale opacity-40 group-hover:opacity-80 group-hover:scale-105 transition-all duration-[1.2s]" />
-                       <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                    </div>
-                    <span className="text-[10px] font-bold tracking-[0.4em] text-accent/40 uppercase block mb-6">Discovery // 01</span>
-                    <h3 className="text-xl font-bold uppercase tracking-tight text-foreground mb-4 group-hover:text-accent transition-colors">The V12 Renaissance</h3>
-                    <p className="text-[12px] text-muted leading-relaxed font-medium">A philosophical exploration of why mechanical soul matters in an increasingly automated world.</p>
-                 </div>
-                 <div className="group cursor-pointer">
-                    <div className="relative aspect-[16/10] overflow-hidden mb-10 border border-accent/5">
-                       <img src="https://images.unsplash.com/photo-1614162692292-7ac56d73771e?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale opacity-40 group-hover:opacity-80 group-hover:scale-105 transition-all duration-[1.2s]" />
-                       <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                    </div>
-                    <span className="text-[10px] font-bold tracking-[0.4em] text-accent/40 uppercase block mb-6">Design // 02</span>
-                    <h3 className="text-xl font-bold uppercase tracking-tight text-foreground mb-4 group-hover:text-accent transition-colors">Aerodynamic Poetry</h3>
-                    <p className="text-[12px] text-muted leading-relaxed font-medium">Understanding the structural integrity and fluid dynamics of our signature carbon-fiber wings.</p>
-                 </div>
-                 <div className="group cursor-pointer">
-                    <div className="relative aspect-[16/10] overflow-hidden mb-10 border border-accent/5">
-                       <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale opacity-40 group-hover:opacity-80 group-hover:scale-105 transition-all duration-[1.2s]" />
-                       <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                    </div>
-                    <span className="text-[10px] font-bold tracking-[0.4em] text-accent/40 uppercase block mb-6">Legacy // 03</span>
-                    <h3 className="text-xl font-bold uppercase tracking-tight text-foreground mb-4 group-hover:text-accent transition-colors">The St. Moritz Archive</h3>
-                    <p className="text-[12px] text-muted leading-relaxed font-medium">Inside our private annual gathering of the world's most significant automotive collectors.</p>
-                 </div>
-              </div>
-           </div>
-        </section>
-
-        {/* Brand Statement / CTA Section */}
-        <section className="relative h-[80vh] flex items-center justify-center bg-background overflow-hidden border-t border-accent/10 bg-texture">
+        {/* Industrial Brand Statement */}
+        <section className="relative min-h-[100vh] flex items-center justify-center bg-background overflow-hidden bg-blueprint">
           <div className="relative z-10 text-center px-6">
-            <span className="text-[11px] font-bold tracking-[0.7em] text-accent uppercase block mb-12 italic">The Registry</span>
-             <h2 className="text-editorial text-5xl sm:text-[10rem] font-bold mb-16 text-foreground leading-[0.8] tracking-tighter">
-              BEGIN YOUR <br /> <span className="italic text-accent/[0.08]" style={{ WebkitTextStroke: '1px rgba(181, 154, 109, 0.4)' }}>RESERVATION.</span>
+            <div className="h-24 w-px bg-accent/30 mx-auto mb-12" />
+            <span className="text-dossier block mb-12 underline underline-offset-8 decoration-accent/20">The Foundation</span>
+            <h2 className="text-industrial text-6xl sm:text-[15rem] text-foreground leading-[0.7] tracking-tighter mb-24">
+              MECHANICS <br /> 
+              <span className="text-accent italic">OF SOUL.</span>
             </h2>
-            <Link href="/contact" className="inline-block px-16 py-7 bg-accent text-background font-bold tracking-[0.4em] uppercase hover:bg-foreground hover:text-background transition-all duration-500 text-xs shadow-2xl shadow-accent/20">
-              Request Exclusive Invitation
+            <Link href="/contact" className="inline-block px-24 py-8 bg-foreground text-background text-industrial text-xl hover:bg-accent hover:scale-110 transition-all duration-500 shadow-2xl">
+              Inquire // Arch
             </Link>
+          </div>
+
+          {/* Large Background vertical text */}
+          <div className="absolute top-0 right-24 h-full pointer-events-none opacity-[0.03]">
+            <span className="text-industrial text-[20rem] whitespace-nowrap [writing-mode:vertical-rl]">ZENITH AUTOMOTIVE GROUP</span>
           </div>
         </section>
       </main>
