@@ -1,5 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap');
-@import "tailwindcss";
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
 
 :root {
   --background: #e8e4db;
@@ -8,6 +25,7 @@
   --surface: #e1ddd3;
   --border: rgba(0, 0, 0, 0.1);
   --muted: #444444;
+  --easing-premium: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @theme inline {
@@ -21,7 +39,7 @@
   --font-serif: var(--font-serif), "Playfair Display", serif;
   --font-sans: var(--font-sans), "Inter", sans-serif;
   
-  --animate-fade-up: fade-up 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-up: fade-up 1.6s var(--easing-premium) forwards;
   --animate-reveal: reveal 1.8s cubic-bezier(0.77, 0, 0.175, 1) forwards;
   --animate-float: float 6s ease-in-out infinite;
   --animate-grain: grain 8s steps(10) infinite;
@@ -57,7 +75,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: initial;
 }
 
 body {
@@ -66,6 +84,8 @@ body {
   font-family: var(--font-sans);
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .bg-blueprint {
@@ -88,7 +108,7 @@ body {
   opacity: 0.05;
   pointer-events: none;
   z-index: 999;
-  animation: noise 0.2s infinite;
+  animation: noise 0.5s infinite;
 }
 
 @keyframes noise {
@@ -147,9 +167,13 @@ h1, h2, h3 {
 }
 
 .parallax-img {
-  transition: transform 2s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 2s var(--easing-premium);
 }
 
 .bg-texture {
   background-image: radial-gradient(circle at 50% 50%, rgba(181, 154, 109, 0.05) 0%, transparent 70%);
+}
+
+.smooth-transition {
+  transition: all 0.7s var(--easing-premium);
 }
