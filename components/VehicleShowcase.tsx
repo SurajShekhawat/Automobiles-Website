@@ -64,9 +64,8 @@ export default function VehicleShowcase() {
             </div>
           </RevealItem>
 
-          <RevealItem>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border-y border-black/10">
-              {vehicles.map((v, i) => (
+          <RevealItem className="grid grid-cols-1 md:grid-cols-3 gap-0 border-y border-black/10">
+            {vehicles.map((v, i) => (
                 <div 
                   key={v.id} 
                   className="group relative h-[800px] overflow-hidden border-r border-black/10 last:border-r-0 cursor-pointer"
@@ -116,7 +115,6 @@ export default function VehicleShowcase() {
                   </div>
                 </div>
               ))}
-            </div>
           </RevealItem>
         </SmoothReveal>
       </div>

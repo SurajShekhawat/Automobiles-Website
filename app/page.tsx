@@ -265,7 +265,7 @@ export default function Home() {
 
           {/* Large Background vertical text with parallax */}
           <motion.div 
-            style={{ y: useTransform(scrollY, [0, 5000], [0, 200]) }}
+            style={{ y: useTransform(scrollY, [0, 10000], [0, 400]) }}
             className="absolute top-0 right-24 h-full pointer-events-none opacity-[0.03]"
           >
             <span className="text-industrial text-[20rem] whitespace-nowrap [writing-mode:vertical-rl]">ZENITH AUTOMOTIVE GROUP</span>
