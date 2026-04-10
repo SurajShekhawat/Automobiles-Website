@@ -9,6 +9,7 @@ interface SmoothRevealProps {
   duration?: number;
   y?: number;
   stagger?: boolean;
+  className?: string;
 }
 
 export default function SmoothReveal({ 
@@ -16,11 +17,13 @@ export default function SmoothReveal({
   delay = 0, 
   duration = 0.8, 
   y = 40,
-  stagger = false
+  stagger = false,
+  className = ""
 }: SmoothRevealProps) {
   if (stagger) {
     return (
       <motion.div
+        className={className}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
@@ -40,6 +43,7 @@ export default function SmoothReveal({
 
   return (
     <motion.div
+      className={className}
       initial={{ opacity: 0, y }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
@@ -54,8 +58,9 @@ export default function SmoothReveal({
   );
 }
 
-export const RevealItem = ({ children }: { children: ReactNode }) => (
+export const RevealItem = ({ children, className = "" }: { children: ReactNode, className?: string }) => (
   <motion.div
+    className={className}
     variants={{
       hidden: { opacity: 0, y: 20 },
       visible: { 
