@@ -1,10 +1,10 @@
 export default function Footer() {
   return (
-    <footer className="bg-background border-t border-white/5 pt-24 pb-12 px-6 sm:px-12 relative overflow-hidden">
+    <footer className="bg-background border-t border-black/5 pt-24 pb-12 px-6 sm:px-12 relative overflow-hidden">
       <div className="bg-blueprint absolute inset-0 opacity-10 pointer-events-none" />
       
       <div className="mx-auto max-w-[1920px] relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24 pb-24 border-b border-white/5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24 pb-24 border-b border-black/5">
           <div className="col-span-1 lg:col-span-1">
              <div className="text-industrial text-4xl text-foreground mb-8">ZENITH</div>
              <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed max-w-[200px]">
@@ -32,7 +32,7 @@ export default function Footer() {
 
           <div className="flex flex-col items-start lg:items-end justify-between">
              <div className="text-right">
-                <span className="text-industrial text-4xl text-white/[0.03]">SYS.02</span>
+                <span className="text-industrial text-4xl text-black/[0.03]">SYS.02</span>
              </div>
              <div className="flex gap-8">
                 {['IG', 'TW', 'YT'].map(social => (

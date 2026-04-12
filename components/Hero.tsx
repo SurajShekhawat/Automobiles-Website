@@ -13,18 +13,18 @@ export default function Hero() {
     <section className="relative h-[90vh] w-full bg-background overflow-hidden flex items-end pb-24 px-6 sm:px-12">
       <div className="grain" />
       
-      {/* Cinematic Video Background with Parallax */}
+      {/* High-Key Video Background with Parallax */}
       <motion.div style={{ y: videoY }} className="absolute inset-0 z-0 overflow-hidden">
         <video 
           autoPlay 
           loop 
           muted 
           playsInline
-          className="w-full h-full object-cover scale-110 contrast-110 brightness-75 grayscale-[20%]"
+          className="w-full h-full object-cover scale-110 contrast-125 brightness-[1.6] opacity-40"
         >
           <source src="https://player.vimeo.com/external/494252666.hd.mp4?s=2f5c71d64380969502758178cc0ca58a8a47ea1a&profile_id=175" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-40" />
       </motion.div>
 
       <motion.div style={{ y: textY }} className="relative z-10 w-full flex flex-col sm:flex-row justify-between items-end gap-12">
