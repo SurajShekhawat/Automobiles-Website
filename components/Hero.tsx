@@ -29,7 +29,7 @@ export default function Hero() {
 
       <motion.div style={{ y: textY }} className="relative z-10 w-full flex flex-col sm:flex-row justify-between items-end gap-12">
          <SmoothReveal y={80}>
-            <h1 className="text-industrial text-[15vw] sm:text-[12vw] leading-none mb-4">
+            <h1 className="text-industrial text-[18vw] sm:text-[15vw] leading-none mb-4">
                ZENITH <span className="text-accent italic">ARCHIVE</span>
             </h1>
             <div className="flex items-center gap-6">

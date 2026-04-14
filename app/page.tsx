@@ -81,7 +81,7 @@ export default function Home() {
                    </div>
                    <div className="max-w-md text-right">
                       <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed">
-                        Where raw metallurgy meets surgical precision. Our Lab 04 oversees the structural integrity of every carbon-monocoque weave and titanium alloy commission.
+                         Where raw metallurgy meets surgical precision. Our Lab 04 oversees the structural integrity of every carbon-monocoque weave and titanium alloy commission.
                       </p>
                    </div>
                 </div>
@@ -109,6 +109,52 @@ export default function Home() {
                 </div>
               </RevealItem>
             </SmoothReveal>
+          </div>
+        </section>
+
+        {/* Station 09 // Thermodynamics Lab */}
+        <section className="bg-surface py-64 relative overflow-hidden boarder-y border-black/5">
+          <div className="bg-blueprint absolute inset-0 opacity-20 pointer-events-none" />
+          <div className="mx-auto max-w-[1920px] px-6 sm:px-12 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
+               <SmoothReveal stagger>
+                  <RevealItem>
+                     <span className="text-dossier block mb-8">Performance Archival / Section 09</span>
+                     <h2 className="text-industrial text-7xl sm:text-[12rem] text-foreground leading-[0.75] mb-16">
+                        THERMO <br /> <span className="text-accent italic">DYNAMICS.</span>
+                     </h2>
+                  </RevealItem>
+                  <RevealItem>
+                     <div className="grid grid-cols-2 gap-12 max-w-md">
+                        <div>
+                           <span className="text-dossier text-[9px] block mb-2 text-accent">01 // HEAT MGMT</span>
+                           <p className="text-muted text-[10px] uppercase font-bold tracking-widest">Active liquid-cooling substrate integration.</p>
+                        </div>
+                        <div>
+                           <span className="text-dossier text-[9px] block mb-2 text-accent">02 // AIRFLOW</span>
+                           <p className="text-muted text-[10px] uppercase font-bold tracking-widest">Variable-geometry aerodynamic vectoring.</p>
+                        </div>
+                     </div>
+                  </RevealItem>
+               </SmoothReveal>
+
+               <SmoothReveal delay={0.4}>
+                  <div className="relative aspect-video bg-background border border-black/10 p-12 overflow-hidden shadow-2xl">
+                     <div className="absolute top-0 right-0 p-4">
+                        <span className="text-dossier text-[8px] opacity-40">CALIBRATION_TEST.v8</span>
+                     </div>
+                     <img 
+                        src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2070" 
+                        className="w-full h-full object-cover grayscale opacity-40 hover:opacity-100 transition-all duration-[3s]" 
+                     />
+                     <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="w-64 h-64 border border-accent/20 rounded-full animate-float flex items-center justify-center">
+                           <div className="w-48 h-48 border border-accent/10 rounded-full animate-pulse" />
+                        </div>
+                     </div>
+                  </div>
+               </SmoothReveal>
+            </div>
           </div>
         </section>
 
@@ -242,6 +288,30 @@ export default function Home() {
                         </RevealItem>
                       ))}
                     </SmoothReveal>
+                 </div>
+              </div>
+           </div>
+        </section>
+
+        {/* Global Registry Activity Feed */}
+        <section className="bg-background py-32 border-b border-black/5 overflow-hidden">
+           <div className="mx-auto max-w-[1920px] px-6 sm:px-12">
+              <div className="flex flex-col md:flex-row justify-between items-center gap-12 text-dossier opacity-40">
+                 <div className="flex gap-8 items-center overflow-hidden whitespace-nowrap">
+                    {[
+                      'UPLOAD: RS_CARRERA_74', 'INTEGRITY_CHECK: PASSED', 'REGISTRY: MAYFAIR_HUB', 
+                      'METADATA: SYNCED', 'PROTOCOL: ACTIVE', 'ARCHIVE_v2: LOADED'
+                    ].map((status, i) => (
+                       <div key={status} className="flex gap-8 items-center animate-pulse" style={{ animationDelay: `${i * 0.5}s` }}>
+                          <span>[{status}]</span>
+                          <div className="h-1 w-1 bg-accent rounded-full" />
+                       </div>
+                    ))}
+                 </div>
+                 <div className="flex gap-4">
+                    <span>SYS_UPTIME: 99.9%</span>
+                    <span>//</span>
+                    <span>DATA_STREAM: SECURE</span>
                  </div>
               </div>
            </div>

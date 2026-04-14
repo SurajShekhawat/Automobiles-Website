@@ -12,20 +12,20 @@ export default function Navbar() {
       <nav className="fixed top-0 left-0 right-0 z-[100] bg-background/80 backdrop-blur-md border-b border-black/5 px-6 sm:px-12 py-6">
         <div className="mx-auto flex w-full max-w-[1920px] items-center justify-between">
           
-          <Link href="/" className="text-industrial text-3xl sm:text-4xl text-foreground hover:italic transition-all">
+          <Link href="/" className="text-industrial text-4xl sm:text-6xl text-foreground hover:italic transition-all">
             ZENITH
           </Link>
 
           {/* Center: Monospace Nav (Desktop) */}
           <div className="hidden lg:flex gap-12">
-            <Link href="/inventory" className="text-dossier group flex items-baseline gap-2 hover:text-foreground transition-colors">
-              <span className="text-[8px] opacity-20">01.</span> Showcase
+            <Link href="/inventory" className="text-dossier text-[13px] group flex items-baseline gap-2 hover:text-foreground transition-colors">
+              <span className="text-[10px] opacity-20">01.</span> Showcase
             </Link>
-            <Link href="/about" className="text-dossier group flex items-baseline gap-2 hover:text-foreground transition-colors">
-              <span className="text-[8px] opacity-20">02.</span> Heritage
+            <Link href="/about" className="text-dossier text-[13px] group flex items-baseline gap-2 hover:text-foreground transition-colors">
+              <span className="text-[10px] opacity-20">02.</span> Heritage
             </Link>
-            <Link href="/contact" className="text-dossier group flex items-baseline gap-2 hover:text-foreground transition-colors">
-              <span className="text-[8px] opacity-20">03.</span> Inquire
+            <Link href="/contact" className="text-dossier text-[13px] group flex items-baseline gap-2 hover:text-foreground transition-colors">
+              <span className="text-[10px] opacity-20">03.</span> Inquire
             </Link>
           </div>
 
