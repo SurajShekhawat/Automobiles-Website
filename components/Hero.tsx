@@ -12,13 +12,13 @@ export default function Hero() {
   return (
     <section className="relative h-[90vh] w-full bg-background overflow-hidden flex items-end pb-24 px-6 sm:px-12">
       <div className="grain" />
-      
+
       {/* High-Key Video Background with Parallax */}
       <motion.div style={{ y: videoY }} className="absolute inset-0 z-0 overflow-hidden">
-        <video 
-          autoPlay 
-          loop 
-          muted 
+        <video
+          autoPlay
+          loop
+          muted
           playsInline
           className="w-full h-full object-cover scale-110 contrast-125 brightness-[1.6] opacity-40"
         >
@@ -28,24 +28,25 @@ export default function Hero() {
       </motion.div>
 
       <motion.div style={{ y: textY }} className="relative z-10 w-full flex flex-col sm:flex-row justify-between items-end gap-12">
-         <SmoothReveal y={80}>
-            <h1 className="text-industrial text-[18vw] sm:text-[15vw] leading-none mb-4">
-               ZENITH <span className="text-accent italic">ARCHIVE</span>
-            </h1>
-            <div className="flex items-center gap-6">
-              <div className="h-px w-24 bg-foreground" />
-              <span className="text-dossier text-foreground">Established 1924 // London Hub</span>
-            </div>
-         </SmoothReveal>
-         
-         <div className="text-right hidden sm:block">
-            <SmoothReveal delay={0.2}>
-               <p className="text-dossier text-foreground opacity-60 mb-8 max-w-[200px]">
-                  ARCHIVAL SYSTEMS v2.0 <br />
-                  [STATUS: OPERATIONAL]
-               </p>
-            </SmoothReveal>
-         </div>
+        <SmoothReveal y={80}>
+          <h1 className="text-industrial text-[12vw] sm:text-[9vw] leading-[0.9] tracking-tight mb-8">
+            ZENITH <br />
+            <span className="text-foreground/40 italic font-light">ARCHIVE.</span>
+          </h1>
+          <div className="flex items-center gap-6">
+            <div className="h-px w-24 bg-foreground" />
+            <span className="text-dossier text-foreground">Established 1924 // London Hub</span>
+          </div>
+        </SmoothReveal>
+
+        <div className="text-right hidden sm:block">
+          <SmoothReveal delay={0.2}>
+            <p className="text-dossier text-foreground opacity-60 mb-8 max-w-[200px]">
+              ARCHIVAL SYSTEMS v2.0 <br />
+              [STATUS: OPERATIONAL]
+            </p>
+          </SmoothReveal>
+        </div>
       </motion.div>
     </section>
   );

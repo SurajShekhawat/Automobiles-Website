@@ -58,63 +58,61 @@ export default function VehicleShowcase() {
                 <span className="text-dossier">Serial No. 001-006</span>
                 <div className="editorial-line flex-1" />
               </div>
-              <h2 className="text-industrial text-6xl sm:text-[14rem] text-foreground leading-[0.75]">
-                THE <br /> <span className="text-accent italic">REGISTRY.</span>
+              <h2 className="text-industrial text-5xl sm:text-7xl text-foreground leading-[1] mb-12 underline underline-offset-[24px] decoration-accent/20">
+                THE <br /> <span className="text-accent italic font-light outline-text">REGISTRY.</span>
               </h2>
             </div>
           </RevealItem>
 
           <RevealItem className="grid grid-cols-1 md:grid-cols-3 gap-0 border-y border-black/10">
             {vehicles.map((v, i) => (
-                <div 
-                  key={v.id} 
-                  className="group relative h-[800px] overflow-hidden border-r border-black/10 last:border-r-0 cursor-pointer"
-                >
-                  {/* Background ID */}
-                  <div className="absolute top-24 left-1/2 -translate-x-1/2 text-[20rem] font-black text-black/[0.03] select-none transition-all duration-1000 group-hover:text-accent/[0.05] group-hover:scale-110">
-                    {v.id}
-                  </div>
+              <div
+                key={v.id}
+                className="group relative h-[800px] overflow-hidden border-r border-black/10 last:border-r-0 cursor-pointer"
+              >
+                {/* Clean Image Border removed background numbers causing clutter */}
 
-                  {/* Main Image */}
-                  <img 
-                    src={v.image}
-                    alt={v.name}
-                    className="absolute inset-0 h-full w-full object-cover grayscale opacity-20 group-hover:opacity-100 group-hover:scale-110 transition-all duration-[1s]"
-                  />
 
-                  {/* Info Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90" />
-                  
-                  <div className="absolute bottom-12 left-12 right-12">
-                    <div className="flex flex-col gap-6">
-                      <div className="flex items-end justify-between border-b border-black/10 pb-8 group-hover:border-accent transition-colors duration-500">
-                        <div>
-                          <span className="text-dossier block mb-2">{v.type}</span>
-                          <h3 className="text-industrial text-4xl text-foreground group-hover:text-accent transition-colors duration-500">{v.name}</h3>
-                        </div>
-                        <span className="text-industrial text-2xl opacity-10 group-hover:opacity-100 transition-opacity">0{i+1}</span>
+                {/* Main Image */}
+                <img
+                  src={v.image}
+                  alt={v.name}
+                  className="absolute inset-0 h-full w-full object-cover grayscale opacity-20 group-hover:opacity-100 group-hover:scale-110 transition-all duration-[1s]"
+                />
+
+                {/* Info Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90" />
+
+                <div className="absolute bottom-12 left-12 right-12">
+                  <div className="flex flex-col gap-6">
+                    <div className="flex items-end justify-between border-b border-black/10 pb-8 group-hover:border-accent transition-colors duration-500">
+                      <div>
+                        <span className="text-dossier block mb-2">{v.type}</span>
+                        <h3 className="text-industrial text-4xl text-foreground group-hover:text-accent transition-colors duration-500">{v.name}</h3>
                       </div>
-                      
-                      <div className="h-0 group-hover:h-24 transition-all duration-700 overflow-hidden">
-                        <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed">
-                          {v.desc}
-                        </p>
-                        <div className="mt-6 flex gap-8">
-                           <span className="text-dossier text-[8px] underline">Spec-Sheet // Arch</span>
-                           <span className="text-dossier text-[8px] underline">Inquiry // Ref</span>
-                        </div>
-                      </div>
+                      <span className="text-industrial text-2xl opacity-10 group-hover:opacity-100 transition-opacity">0{i + 1}</span>
                     </div>
-                  </div>
 
-                  {/* Technical Indicator */}
-                  <div className="absolute top-12 right-12 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-                    <div className="h-10 w-10 border border-accent/40 rounded-full flex items-center justify-center animate-spin-slow">
-                       <div className="h-1 w-1 bg-accent" />
+                    <div className="h-0 group-hover:h-24 transition-all duration-700 overflow-hidden">
+                      <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed">
+                        {v.desc}
+                      </p>
+                      <div className="mt-6 flex gap-8">
+                        <span className="text-dossier text-[8px] underline">Spec-Sheet // Arch</span>
+                        <span className="text-dossier text-[8px] underline">Inquiry // Ref</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              ))}
+
+                {/* Technical Indicator */}
+                <div className="absolute top-12 right-12 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                  <div className="h-10 w-10 border border-accent/40 rounded-full flex items-center justify-center animate-spin-slow">
+                    <div className="h-1 w-1 bg-accent" />
+                  </div>
+                </div>
+              </div>
+            ))}
           </RevealItem>
         </SmoothReveal>
       </div>

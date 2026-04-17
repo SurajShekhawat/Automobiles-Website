@@ -21,8 +21,8 @@ export default function Contact() {
                   </div>
                 </RevealItem>
                 <RevealItem>
-                  <h1 className="text-industrial text-7xl sm:text-[12rem] text-foreground leading-[0.8] tracking-tighter mb-16">
-                    INITIATE <br /> <span className="text-accent italic">DIALOGUE.</span>
+                  <h1 className="text-industrial text-6xl sm:text-8xl text-foreground leading-[0.9] tracking-tight mb-16">
+                    INITIATE <br /> <span className="text-accent italic font-light">DIALOGUE.</span>
                   </h1>
                 </RevealItem>
                 
@@ -55,7 +55,7 @@ export default function Contact() {
                 <RevealItem>
                   <div className="p-12 border border-black/10 bg-surface/30">
                      <span className="text-dossier block mb-6">Mayfair HQ // London</span>
-                     <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed">
+                     <p className="text-outfit text-muted text-[11px] uppercase font-bold tracking-[0.2em] leading-relaxed">
                         12 Bruton Place, Mayfair <br />
                         London W1J 6NP <br />
                         United Kingdom
@@ -65,7 +65,7 @@ export default function Contact() {
                 <RevealItem>
                   <div className="p-12 border border-black/10 bg-surface/30">
                      <span className="text-dossier block mb-4">Digital Support</span>
-                     <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed">
+                     <p className="text-outfit text-muted text-[11px] uppercase font-bold tracking-[0.2em] leading-relaxed">
                         registry@zenith-auto.arch <br />
                         +44 (0) 20 7946 0142
                      </p>

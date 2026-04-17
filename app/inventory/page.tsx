@@ -28,13 +28,13 @@ export default function Inventory() {
                       <span className="text-dossier">Archive Access / Level 4</span>
                       <div className="h-px w-24 bg-accent/20" />
                     </div>
-                    <h1 className="text-industrial text-7xl sm:text-[12rem] text-foreground leading-[0.8] tracking-tighter">
-                      CURRENT <br /> <span className="text-accent italic">BUREAU.</span>
+                    <h1 className="text-industrial text-6xl sm:text-8xl text-foreground leading-[0.9] tracking-tight">
+                      CURRENT <br /> <span className="text-accent italic font-light">BUREAU.</span>
                     </h1>
                  </div>
                  <div className="text-right max-w-sm">
                     <p className="text-dossier mb-6">Total Registry: 04 Machines</p>
-                    <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed">
+                    <p className="text-outfit text-muted text-[11px] uppercase font-bold tracking-[0.2em] leading-relaxed">
                       Authorized commissions currently available for private acquisition. Every machine in the registry has been verified for mechanical purity.
                     </p>
                  </div>

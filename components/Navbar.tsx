@@ -11,21 +11,21 @@ export default function Navbar() {
     <>
       <nav className="fixed top-0 left-0 right-0 z-[100] bg-background/80 backdrop-blur-md border-b border-black/5 px-6 sm:px-12 py-6">
         <div className="mx-auto flex w-full max-w-[1920px] items-center justify-between">
-          
-          <Link href="/" className="text-industrial text-4xl sm:text-6xl text-foreground hover:italic transition-all">
+
+          <Link href="/" className="text-industrial text-2xl sm:text-3xl text-foreground hover:italic transition-all uppercase tracking-widest">
             ZENITH
           </Link>
 
           {/* Center: Monospace Nav (Desktop) */}
           <div className="hidden lg:flex gap-12">
-            <Link href="/inventory" className="text-dossier text-[13px] group flex items-baseline gap-2 hover:text-foreground transition-colors">
-              <span className="text-[10px] opacity-20">01.</span> Showcase
+            <Link href="/inventory" style={{fontSize: '14px!important'}} className="text-dossier text-[14px] group flex items-baseline gap-2 hover:text-foreground transition-colors">
+              <span style={{fontSize: '12px!important'}} className="text-[12px] opacity-20">01.</span> Showcase
             </Link>
-            <Link href="/about" className="text-dossier text-[13px] group flex items-baseline gap-2 hover:text-foreground transition-colors">
-              <span className="text-[10px] opacity-20">02.</span> Heritage
+            <Link href="/about" style={{fontSize: '14px!important'}} className="text-dossier text-[14px] group flex items-baseline gap-2 hover:text-foreground transition-colors">
+              <span style={{fontSize: '12px!important'}} className="text-[12px] opacity-20">02.</span> Heritage
             </Link>
-            <Link href="/contact" className="text-dossier text-[13px] group flex items-baseline gap-2 hover:text-foreground transition-colors">
-              <span className="text-[10px] opacity-20">03.</span> Inquire
+            <Link href="/contact" style={{fontSize: '14px!important'}} className="text-dossier text-[14px] group flex items-baseline gap-2 hover:text-foreground transition-colors">
+              <span style={{fontSize: '12px!important'}} className="text-[12px] opacity-20">03.</span> Inquire
             </Link>
           </div>
 
@@ -34,7 +34,7 @@ export default function Navbar() {
               Archive v.2.0 <br />
               <span className="text-accent underline decoration-accent/30">Access Restricted</span>
             </div>
-            <button 
+            <button
               onClick={() => setIsMenuOpen(true)}
               className="flex flex-col gap-1.5"
             >

@@ -22,12 +22,12 @@ export default function About() {
                   </div>
                 </RevealItem>
                 <RevealItem>
-                  <h1 className="text-industrial text-7xl sm:text-[10rem] text-foreground leading-[0.8] tracking-tighter mb-16">
-                    CENTURY <br /> <span className="text-accent italic">STUDIO.</span>
+                  <h1 className="text-industrial text-6xl sm:text-8xl text-foreground leading-[0.9] tracking-tighter mb-16">
+                    CENTURY <br /> <span className="text-accent italic font-light">STUDIO.</span>
                   </h1>
                 </RevealItem>
                 <RevealItem>
-                  <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed max-w-sm mb-12">
+                  <p className="text-outfit text-muted text-[11px] uppercase font-bold tracking-[0.2em] leading-relaxed max-w-sm mb-12">
                     The chronicle of Zenith is not merely a timeline of dates, but a preservation of mechanical soul. Founded in 1924, our mission remains unchanged: to curate the intersection of engineering and emotion.
                   </p>
                 </RevealItem>
@@ -45,13 +45,13 @@ export default function About() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                      <div className="p-12 border border-black/10 bg-surface/30 backdrop-blur-sm">
                         <span className="text-dossier block mb-8 underline underline-offset-8">01. Originality</span>
-                        <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed">
+                        <p className="text-outfit text-muted text-[11px] uppercase font-bold tracking-[0.2em] leading-relaxed">
                           We believe in period-correct metallurgy. Every machine processed in our atelier is restored using materials and techniques authentic to its specific era of engineering.
                         </p>
                      </div>
                      <div className="p-12 border border-black/10 bg-surface/30 backdrop-blur-sm">
                         <span className="text-dossier block mb-8 underline underline-offset-8">02. Evolution</span>
-                        <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed">
+                        <p className="text-outfit text-muted text-[11px] uppercase font-bold tracking-[0.2em] leading-relaxed">
                           Legacy is not static. Our Innovation Lab explores how performance heritage can thrive in a carbon-neutral future without sacrificing the visceral mechanical experience.
                         </p>
                      </div>
@@ -70,7 +70,7 @@ export default function About() {
           <SmoothReveal y={60}>
             <div className="text-center py-32 border-t border-black/10">
                <span className="text-dossier block mb-12">Access Protocol Completed</span>
-               <h2 className="text-industrial text-4xl sm:text-7xl text-foreground">A Legacy in <span className="text-accent">Motion.</span></h2>
+               <h2 className="text-industrial text-4xl sm:text-6xl text-foreground">A Legacy in <span className="text-accent">Motion.</span></h2>
             </div>
           </SmoothReveal>
         </div>
