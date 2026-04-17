@@ -3,6 +3,9 @@
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
 
+// The premium easing curve used throughout the site
+const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
+
 interface SmoothRevealProps {
   children: ReactNode;
   delay?: number;
@@ -12,13 +15,13 @@ interface SmoothRevealProps {
   className?: string;
 }
 
-export default function SmoothReveal({ 
-  children, 
-  delay = 0, 
-  duration = 0.8, 
-  y = 40,
+export default function SmoothReveal({
+  children,
+  delay = 0,
+  duration = 0.9,
+  y = 50,
   stagger = false,
-  className = ""
+  className = "",
 }: SmoothRevealProps) {
   if (stagger) {
     return (
@@ -26,14 +29,15 @@ export default function SmoothReveal({
         className={className}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ once: true, margin: "-80px" }}
         variants={{
+          hidden: {},
           visible: {
             transition: {
-              staggerChildren: 0.1,
-              delayChildren: delay
-            }
-          }
+              staggerChildren: 0.12,
+              delayChildren: delay,
+            },
+          },
         }}
       >
         {children}
@@ -46,11 +50,11 @@ export default function SmoothReveal({
       className={className}
       initial={{ opacity: 0, y }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ 
-        duration, 
-        delay, 
-        ease: [0.16, 1, 0.3, 1] 
+      viewport={{ once: true, margin: "-80px" }}
+      transition={{
+        duration,
+        delay,
+        ease: EASE,
       }}
     >
       {children}
@@ -58,16 +62,26 @@ export default function SmoothReveal({
   );
 }
 
-export const RevealItem = ({ children, className = "" }: { children: ReactNode, className?: string }) => (
+export const RevealItem = ({
+  children,
+  className = "",
+}: {
+  children: ReactNode;
+  className?: string;
+}) => (
   <motion.div
     className={className}
     variants={{
-      hidden: { opacity: 0, y: 20 },
-      visible: { 
-        opacity: 1, 
+      hidden: { opacity: 0, y: 30, filter: "blur(4px)" },
+      visible: {
+        opacity: 1,
         y: 0,
-        transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
-      }
+        filter: "blur(0px)",
+        transition: {
+          duration: 0.85,
+          ease: [0.22, 1, 0.36, 1],
+        },
+      },
     }}
   >
     {children}

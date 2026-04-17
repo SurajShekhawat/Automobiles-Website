@@ -5,10 +5,10 @@ import { ReactNode } from "react";
 
 export default function LenisProvider({ children }: { children: ReactNode }) {
   return (
-    <ReactLenis 
-      root 
-      options={{ 
-        duration: 1.2, 
+    <ReactLenis
+      root
+      options={{
+        duration: 1.2,
         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
         smoothWheel: true,
         wheelMultiplier: 1,

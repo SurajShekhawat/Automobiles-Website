@@ -15,12 +15,6 @@ const navItems = [
   { name: "Inquire",   href: "/contact",   ref: "03", sub: "Commission Protocol" },
 ];
 
-const socials = [
-  { label: "IG",  href: "#" },
-  { label: "TW",  href: "#" },
-  { label: "YT",  href: "#" },
-];
-
 // Overlay variants
 const overlayVariants: import("framer-motion").Variants = {
   closed: { opacity: 0 },
@@ -147,21 +141,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                   </motion.div>
                 ))}
 
-                {/* Extra links */}
-                <motion.div
-                  variants={itemVariants}
-                  className="flex gap-8 pt-10"
-                >
-                  {socials.map((s) => (
-                    <a
-                      key={s.label}
-                      href={s.href}
-                      className="text-dossier text-[14px] text-muted hover:text-accent transition-colors duration-200"
-                    >
-                      [{s.label}]
-                    </a>
-                  ))}
-                </motion.div>
+                
               </motion.nav>
 
               {/* ── Footer ── */}

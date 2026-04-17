@@ -232,7 +232,7 @@ export default function Home() {
               <div className="md:col-span-7 group cursor-pointer">
                 <SmoothReveal delay={0.4}>
                   <div className="relative aspect-[16/9] mb-8 overflow-hidden bg-surface transition-all duration-700">
-                    <img src="https://images.unsplash.com/photo-1544883617-640add7af993?q=80&w=2070" className="w-full h-full object-cover transition-all duration-[2s] group-hover:scale-105 contrast-125 saturate-[0.7] group-hover:saturate-100 opacity-90" />
+                    <img src="https://images.unsplash.com/photo-1616789916189-3a0d215b6122?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-full h-full object-cover transition-all duration-[2s] group-hover:scale-105 contrast-125 saturate-[0.7] group-hover:saturate-100 opacity-90" />
                   </div>
                   <span className="text-dossier text-accent mb-4 block underline underline-offset-8">Feature // Hist.Registry</span>
                   <h3 className="text-industrial text-4xl sm:text-6xl text-foreground mb-6">THE ART OF THE <br /> ANALOG OVERHAUL</h3>
