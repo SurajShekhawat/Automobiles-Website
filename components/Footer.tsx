@@ -7,14 +7,14 @@ export default function Footer() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24 pb-24 border-b border-black/5">
                <div className="col-span-1 lg:col-span-1">
                   <div className="text-industrial text-2xl text-foreground mb-6 uppercase tracking-widest">ZENITH</div>
-                  <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed max-w-[200px]">
+                  <p className="text-muted text-[14px] uppercase tracking-widest leading-relaxed max-w-[200px]">
                      Custodian of automotive performance and mechanical heritage since 1924.
                   </p>
                </div>
 
                <div>
                   <span className="text-dossier block mb-8 underline underline-offset-8">Global Registry</span>
-                  <div className="flex flex-col gap-4 text-[11px] font-bold tracking-[0.2em] transition-colors">
+                  <div className="flex flex-col gap-4 text-[14px] font-bold tracking-[0.2em] transition-colors">
                      <a href="/inventory" className="text-muted hover:text-accent uppercase">Showcase</a>
                      <a href="/about" className="text-muted hover:text-accent uppercase">Heritage</a>
                      <a href="/contact" className="text-muted hover:text-accent uppercase">Inquiry</a>
@@ -23,7 +23,7 @@ export default function Footer() {
 
                <div>
                   <span className="text-dossier block mb-8 underline underline-offset-8">Ateliers</span>
-                  <div className="space-y-6 text-[11px] font-bold tracking-widest text-muted uppercase">
+                  <div className="space-y-6 text-[14px] font-bold tracking-widest text-muted uppercase">
                      <p>Mayfair, London</p>
                      <p>Brera, Milan</p>
                      <p>Aoyama, Tokyo</p>
@@ -43,10 +43,10 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-               <span className="text-dossier text-[9px] opacity-40">© 2026 ZENITH ARCHIVE. ALL COMMISSIONS RESERVED.</span>
+               <span className="text-dossier text-[14px] opacity-40">© 2026 ZENITH ARCHIVE. ALL COMMISSIONS RESERVED.</span>
                <div className="flex gap-12">
-                  <span className="text-dossier text-[9px] opacity-40">Privacy Protocol</span>
-                  <span className="text-dossier text-[9px] opacity-40">Terms of Acquisition</span>
+                  <span className="text-dossier text-[14px] opacity-40">Privacy Protocol</span>
+                  <span className="text-dossier text-[14px] opacity-40">Terms of Acquisition</span>
                </div>
             </div>
          </div>

@@ -55,7 +55,7 @@ export default function Contact() {
                 <RevealItem>
                   <div className="p-12 border border-black/10 bg-surface/30">
                      <span className="text-dossier block mb-6">Mayfair HQ // London</span>
-                     <p className="text-outfit text-muted text-[11px] uppercase font-bold tracking-[0.2em] leading-relaxed">
+                     <p className="text-outfit text-muted text-[14px] uppercase font-bold tracking-[0.2em] leading-relaxed">
                         12 Bruton Place, Mayfair <br />
                         London W1J 6NP <br />
                         United Kingdom
@@ -65,15 +65,15 @@ export default function Contact() {
                 <RevealItem>
                   <div className="p-12 border border-black/10 bg-surface/30">
                      <span className="text-dossier block mb-4">Digital Support</span>
-                     <p className="text-outfit text-muted text-[11px] uppercase font-bold tracking-[0.2em] leading-relaxed">
+                     <p className="text-outfit text-muted text-[14px] uppercase font-bold tracking-[0.2em] leading-relaxed">
                         registry@zenith-auto.arch <br />
                         +44 (0) 20 7946 0142
                      </p>
                   </div>
                 </RevealItem>
                 <RevealItem>
-                  <div className="relative aspect-square grayscale border border-black/10 overflow-hidden">
-                     <img src="https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover opacity-60" alt="Mayfair Office" />
+                  <div className="relative aspect-square border border-black/10 overflow-hidden group">
+                     <img src="https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover contrast-125 saturate-[0.5] group-hover:saturate-100 opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" alt="Mayfair Office" />
                   </div>
                 </RevealItem>
              </div>

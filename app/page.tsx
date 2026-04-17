@@ -38,11 +38,14 @@ export default function Home() {
                   </RevealItem>
                   <RevealItem>
                     <div className="pl-12 border-l border-accent/20">
-                      <p className="text-muted text-sm leading-relaxed max-w-md mb-12 uppercase tracking-widest font-medium">
-                        Zenith began as a restoration atelier in post-war London. Today, we are curators of an evolving legacy. We don't just find cars; we find stories that are waiting to be continued in a modern context.
+                      <p className="text-muted text-sm leading-relaxed max-w-xl mb-6 uppercase tracking-widest font-medium">
+                        Zenith began as a discreet restoration atelier in post-war London, tasked with preserving the mechanical soul of an era that was rapidly digitizing. We recognized early on that true luxury isn't a touchscreen—it is the tactile, visceral explosion of a naturally aspirated engine.
+                      </p>
+                      <p className="text-muted text-sm leading-relaxed max-w-xl mb-12 uppercase tracking-widest font-medium">
+                        Today, we are curators of an evolving legacy. We don't just find cars; we find stories that are waiting to be continued. By merging period-correct metallurgy with aerospace-grade reinforcement, we ensure that these mechanical titans thunder into the next century without sacrificing a single ounce of their original analog brilliance.
                       </p>
                       <Link href="/about" className="text-dossier underline underline-offset-8 hover:text-foreground transition-colors">
-                        Access Full Archive // Hist
+                        Access Full Historical Archive // Hist
                       </Link>
                     </div>
                   </RevealItem>
@@ -50,11 +53,11 @@ export default function Home() {
               </div>
               <div className="lg:col-span-7 relative">
                 <SmoothReveal delay={0.3}>
-                  <div className="relative aspect-[16/10] bg-surface overflow-hidden grayscale border border-black/5">
+                  <div className="relative aspect-[16/10] bg-surface overflow-hidden border border-black/5">
                     <img
-                      src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop"
+                      src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=2070&auto=format&fit=crop"
                       alt="Classic Car Detail"
-                      className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-all duration-[2s]"
+                      className="w-full h-full object-cover contrast-125 saturate-[0.8] opacity-90 hover:opacity-100 hover:saturate-100 transition-all duration-[2s]"
                     />
                   </div>
                 </SmoothReveal>
@@ -79,9 +82,12 @@ export default function Home() {
                     <span className="text-dossier block mb-8">Engineering Ledger // v2.4</span>
                     <h2 className="text-industrial text-4xl sm:text-6xl text-foreground mb-4">STATION <span className="text-accent">04.</span></h2>
                   </div>
-                  <div className="max-w-md text-right">
-                    <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed">
-                      Where raw metallurgy meets surgical precision. Our Lab 04 oversees the structural integrity of every carbon-monocoque weave and titanium alloy commission.
+                  <div className="max-w-xl text-right">
+                    <p className="text-muted text-[14px] uppercase tracking-widest leading-relaxed mb-4">
+                      Where raw metallurgy meets surgical precision. Our Lab 04 protocol oversees the structural integrity of every carbon-monocoque weave and titanium alloy commission.
+                    </p>
+                    <p className="text-muted text-[14px] uppercase tracking-widest leading-relaxed">
+                      Every chassis undergoes stringent sonic testing and chromoly tubular reinforcement before it ever sees an assembly bay. We engineer out the failure points of the 1960s while strictly retaining the driving dynamics that made these platforms legendary. 
                     </p>
                   </div>
                 </div>
@@ -92,16 +98,16 @@ export default function Home() {
                   {[
                     { title: 'BLOCK_CORE', spec: 'TITANIUM-G5', img: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=2070' },
                     { title: 'REINFORCEMENT', spec: 'CARBON-3K', img: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=2070' },
-                    { title: 'ASSEMBLY', spec: 'CLEAN_RM_09', img: 'https://images.unsplash.com/photo-1530124560672-99935178619b?q=80&w=2070' },
-                    { title: 'CASTING', spec: 'B_ALLOY_V8', img: 'https://images.unsplash.com/photo-1611015795014-b8160a665b36?q=80&w=2070' }
+                    { title: 'ASSEMBLY', spec: 'CLEAN_RM_09', img: 'https://images.unsplash.com/photo-1689826493949-5e5824a5474e?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+                    { title: 'CASTING', spec: 'B_ALLOY_V8', img: 'https://images.unsplash.com/photo-1570280406792-bf58b7c59247?q=80&w=1162&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
                   ].map((item, i) => (
-                    <div key={i} className="group relative aspect-square overflow-hidden bg-surface border border-black/5 grayscale hover:grayscale-0 transition-all duration-700">
-                      <img src={item.img} className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000 opacity-60 group-hover:opacity-100" />
+                    <div key={i} className="group relative aspect-square overflow-hidden bg-surface border border-black/5 transition-all duration-700">
+                      <img src={item.img} className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000 contrast-125 saturate-[0.5] opacity-90 group-hover:opacity-100 group-hover:saturate-100" />
                       <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-background to-transparent opacity-90">
-                        <span className="text-dossier text-[9px] block mb-2 text-accent">[{item.title}]</span>
+                        <span className="text-dossier text-[14px] block mb-2 text-accent">[{item.title}]</span>
                         <span className="text-industrial text-xl text-foreground">{item.spec}</span>
                       </div>
-                      <div className="absolute top-8 right-8 text-[8px] font-bold text-foreground opacity-20 group-hover:opacity-100 transition-opacity">
+                      <div className="absolute top-8 right-8 text-[14px] font-bold text-foreground opacity-20 group-hover:opacity-100 transition-opacity">
                         SYS.REF.{i + 100}
                       </div>
                     </div>
@@ -125,14 +131,19 @@ export default function Home() {
                   </h2>
                 </RevealItem>
                 <RevealItem>
-                  <div className="grid grid-cols-2 gap-12 max-w-md">
+                  <div className="grid grid-cols-2 gap-12 max-w-xl pr-12">
                     <div>
-                      <span className="text-dossier text-[9px] block mb-2 text-accent">01 // HEAT MGMT</span>
-                      <p className="text-muted text-[10px] uppercase font-bold tracking-widest">Active liquid-cooling substrate integration.</p>
+                      <span className="text-dossier text-[14px] block mb-4 text-accent border-b border-accent/20 pb-2">01 // HEAT MGMT</span>
+                      <p className="text-muted text-[14px] uppercase font-bold tracking-widest leading-relaxed mb-4">Active liquid-cooling substrate integration. We utilize military-grade thermal mapping to redistribute heat away from the core block.</p>
+                      <p className="text-muted text-[14px] uppercase font-light tracking-widest leading-relaxed">This completely eliminates the vapor lock issues notorious in 1970s carbureted performance engines, allowing for sustained 9,000 RPM track violence without thermal degradation.</p>
                     </div>
                     <div>
-                      <span className="text-dossier text-[9px] block mb-2 text-accent">02 // AIRFLOW</span>
-                      <p className="text-muted text-[10px] uppercase font-bold tracking-widest">Variable-geometry aerodynamic vectoring.</p>
+                      <span className="text-dossier text-[14px] block mb-4 text-accent border-b border-accent/20 pb-2">02 // AIRFLOW</span>
+                      <p className="text-muted text-[14px] uppercase font-bold tracking-widest leading-relaxed mb-4">Variable-geometry aerodynamic vectoring. Fluid dynamic simulations govern the placement of hidden intake valving.</p>
+                      <p className="text-muted text-[14px] uppercase font-light tracking-widest leading-relaxed">Rather than butchering classic body lines with massive carbon wings, we route high-pressure air through the floorpan, generating immense downforce silently.</p>
+                    </div>
+                    <div className="col-span-2 mt-8">
+                       <span className="text-dossier text-[14px] opacity-40 cursor-pointer hover:text-accent transition-colors">[VIEW ENTIRE THERMAL ALGORITHM // DATASHEET]</span>
                     </div>
                   </div>
                 </RevealItem>
@@ -141,11 +152,11 @@ export default function Home() {
               <SmoothReveal delay={0.4}>
                 <div className="relative aspect-video bg-background border border-black/10 p-12 overflow-hidden shadow-2xl">
                   <div className="absolute top-0 right-0 p-4">
-                    <span className="text-dossier text-[8px] opacity-40">CALIBRATION_TEST.v8</span>
+                    <span className="text-dossier text-[14px] opacity-40">CALIBRATION_TEST.v8</span>
                   </div>
                   <img
-                    src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2070"
-                    className="w-full h-full object-cover grayscale opacity-40 hover:opacity-100 transition-all duration-[3s]"
+                    src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=2070"
+                    className="w-full h-full object-cover contrast-125 saturate-[0.6] opacity-80 hover:opacity-100 hover:saturate-100 transition-all duration-[3s]"
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-64 h-64 border border-accent/20 rounded-full animate-float flex items-center justify-center">
@@ -157,6 +168,45 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* --- NEW SECTION: The Mechanical Soul Manifesto --- */}
+        <section className="bg-blueprint py-64 border-y border-black/10 relative overflow-hidden">
+          <div className="mx-auto max-w-[1920px] px-6 sm:px-12 relative z-10">
+            <SmoothReveal stagger>
+              <RevealItem>
+                 <div className="flex items-center gap-4 mb-24">
+                   <div className="h-px w-32 bg-accent" />
+                   <span className="text-dossier font-bold text-accent">THE ZENITH DOCTRINE</span>
+                 </div>
+              </RevealItem>
+              <RevealItem>
+                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 lg:gap-48 items-start">
+                    <h2 className="text-industrial text-4xl sm:text-6xl text-foreground leading-[1.1] mb-8">
+                      PRESERVING THE <br />
+                      <span className="text-accent italic font-light outline-text">TACTILE <br/> REVOLUTION.</span>
+                    </h2>
+                    
+                    <div className="space-y-12">
+                       <p className="text-muted text-sm sm:text-base leading-relaxed tracking-widest uppercase font-medium">
+                         <span className="text-4xl text-foreground font-bold float-left mr-4 mt-1 border border-accent/20 p-2">W</span>
+                         e stand at the precipice of a silent, sterilized future. As the automotive world rushes toward soulless electric mobility, Zenith exists to protect the endangered species of the mechanical era. The smell of high-octane combustion, the distinct metallic click of a gated manual shifter, and the violent roar of a cold-started V12 are sensory experiences that no algorithm can replicate.
+                       </p>
+                       <p className="text-muted text-sm sm:text-base leading-relaxed tracking-widest uppercase font-medium">
+                         Our restorations are not museum pieces designed to collect dust in a climate-controlled vault. They are precision weapons. We tear iconic chassis down to the bare metal, mapping millions of data points, to correct factory flaws while amplifying what made the machine terrifyingly beautiful in the first place.
+                       </p>
+                       <p className="text-muted text-sm sm:text-base leading-relaxed tracking-widest uppercase font-medium">
+                         This is not just restoration. It is the architectural elevation of driving purity. We build machines that demand your absolute attention, forcing a dialogue between driver, engine, and tarmac.
+                       </p>
+                       <div className="pt-8 border-t border-black/10">
+                          <span className="text-dossier block mb-2 cursor-pointer hover:text-accent transition-colors underline underline-offset-8">Read the Full Doctrine // PDF Arch</span>
+                       </div>
+                    </div>
+                 </div>
+              </RevealItem>
+            </SmoothReveal>
+          </div>
+        </section>
+
 
         {/* The Boutique / Showcase */}
         <VehicleShowcase />
@@ -171,7 +221,7 @@ export default function Home() {
                 </h2>
                 <div className="pb-4">
                   <span className="text-dossier block mb-4">Edition // 004/26</span>
-                  <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed max-w-[280px]">
+                  <p className="text-muted text-[14px] uppercase tracking-widest leading-relaxed max-w-[280px]">
                     Exploring the intersection of mechanical heritage and evolving digital mobility.
                   </p>
                 </div>
@@ -181,33 +231,39 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-12 gap-y-32">
               <div className="md:col-span-7 group cursor-pointer">
                 <SmoothReveal delay={0.4}>
-                  <div className="relative aspect-[16/9] mb-8 overflow-hidden bg-surface grayscale group-hover:grayscale-0 transition-all duration-700">
-                    <img src="https://images.unsplash.com/photo-1560570803-7474c0f9af99?q=80&w=2070" className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105" />
+                  <div className="relative aspect-[16/9] mb-8 overflow-hidden bg-surface transition-all duration-700">
+                    <img src="https://images.unsplash.com/photo-1544883617-640add7af993?q=80&w=2070" className="w-full h-full object-cover transition-all duration-[2s] group-hover:scale-105 contrast-125 saturate-[0.7] group-hover:saturate-100 opacity-90" />
                   </div>
                   <span className="text-dossier text-accent mb-4 block underline underline-offset-8">Feature // Hist.Registry</span>
                   <h3 className="text-industrial text-4xl sm:text-6xl text-foreground mb-6">THE ART OF THE <br /> ANALOG OVERHAUL</h3>
-                  <p className="text-muted text-xs uppercase tracking-[0.2em] mb-8 max-w-xl">
+                  <p className="text-muted text-[14px] uppercase tracking-[0.2em] mb-4 max-w-xl leading-relaxed">
                     Inside the restoration of the 1974 RS Carrera chassis #0092. A deep dive into period-correct metallurgy and the digital preservation of mechanical DNA.
                   </p>
-                  <span className="text-dossier text-[8px] opacity-40">READ DURATION: 12 MINS // ARCH_ACCESS: GRANTED</span>
+                  <p className="text-muted text-[14px] uppercase tracking-[0.2em] mb-8 max-w-xl leading-relaxed italic opacity-70">
+                    We sit down with lead engineer Marcus V. to discuss how his team spent 400 hours re-casting the magnesium engine block from original factory blueprints found in a German archive. The result is an engine that revs faster, runs cooler, and sounds infinitely more aggressive than Stuttgart ever intended.
+                  </p>
+                  <span className="text-dossier text-[14px] opacity-40">READ DURATION: 12 MINS // ARCH_ACCESS: GRANTED</span>
                 </SmoothReveal>
               </div>
 
               <div className="md:col-span-4 md:col-start-9 flex flex-col gap-32">
                 <SmoothReveal delay={0.6}>
                   <div className="group cursor-pointer">
-                    <div className="relative aspect-square mb-8 overflow-hidden bg-surface grayscale group-hover:grayscale-0 transition-all duration-700">
-                      <img src="https://images.unsplash.com/photo-1544256718-3bcf237f3974?q=80&w=2070" className="w-full h-full object-cover" />
+                    <div className="relative aspect-square mb-8 overflow-hidden bg-surface transition-all duration-700">
+                      <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=2070" className="w-full h-full object-cover contrast-125 saturate-[0.7] group-hover:saturate-100 transition-all duration-700 opacity-90" />
                     </div>
                     <span className="text-dossier text-accent mb-2 block">Protocol // Design</span>
-                    <h4 className="text-industrial text-3xl text-foreground">FUTURE PROOFING <br /> THE V12 HEART</h4>
+                    <h4 className="text-industrial text-3xl text-foreground mb-4">FUTURE PROOFING <br /> THE V12 HEART</h4>
+                    <p className="text-muted text-[14px] uppercase tracking-widest leading-relaxed">
+                      How we inject modern engine management systems (MoTeC) into analog arteries without losing the soul of the machine.
+                    </p>
                   </div>
                 </SmoothReveal>
 
                 <SmoothReveal delay={0.8}>
                   <div className="group cursor-pointer">
-                    <div className="relative aspect-square mb-8 overflow-hidden bg-surface grayscale group-hover:grayscale-0 transition-all duration-700">
-                      <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=2070" className="w-full h-full object-cover" />
+                    <div className="relative aspect-square mb-8 overflow-hidden bg-surface transition-all duration-700">
+                      <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=2070" className="w-full h-full object-cover contrast-125 saturate-[0.7] group-hover:saturate-100 transition-all duration-700 opacity-90" />
                     </div>
                     <span className="text-dossier text-accent mb-2 block">Archive // Discovery</span>
                     <h4 className="text-industrial text-3xl text-foreground">THE STUTTGART <br /> SURVIVOR PAPERS</h4>
@@ -228,7 +284,7 @@ export default function Home() {
                   <h2 className="text-industrial text-4xl sm:text-6xl text-accent/50 italic font-light">Global Distribution</h2>
                   <div className="text-right">
                     <span className="text-dossier block mb-2">Network Status</span>
-                    <span className="text-foreground font-bold tracking-[0.5em] uppercase text-[10px]">Operational / Worldwide</span>
+                    <span className="text-foreground font-bold tracking-[0.5em] uppercase text-[14px]">Operational / Worldwide</span>
                   </div>
                 </div>
               </RevealItem>
@@ -236,16 +292,17 @@ export default function Home() {
               <RevealItem>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-black/5 divide-x divide-black/5">
                   {[
-                    { city: 'London', role: 'Mayfair HQ / Arch', img: 'https://images.unsplash.com/photo-1526129318478-62ed807ebdf9' },
-                    { city: 'Milan', role: 'Design / Commission', img: 'https://images.unsplash.com/photo-1505761671935-60b3a7427bad' },
-                    { city: 'Tokyo', role: 'Lab / Mobility', img: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf' }
+                    { city: 'London', role: 'Mayfair HQ / Arch', desc: 'The historical genesis of Zenith. Our Mayfair headquarters handles all private client commissioning, archival documentation, and global registry management.', img: 'https://images.unsplash.com/photo-1526129318478-62ed807ebdf9' },
+                    { city: 'Milan', role: 'Design / Commission', desc: 'Where analog blueprints become reality. The Milan atelier is focused strictly on coachbuilding, utilizing third-generation metalworkers to sculpt aluminum and carbon.', img: 'https://images.unsplash.com/photo-1505761671935-60b3a7427bad' },
+                    { city: 'Tokyo', role: 'Lab / Mobility', desc: 'The future of our performance division. Tokyo tests aerospace suspension dynamics, telemetry data, and bespoke wiring harness solutions for classic chassis.', img: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf' }
                   ].map((hub, i) => (
-                    <div key={i} className="group relative aspect-[3/4] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
-                      <img src={`${hub.img}?q=80&w=2070&auto=format&fit=crop`} className="w-full h-full object-cover opacity-30 group-hover:opacity-100 transition-all duration-1000 scale-110 group-hover:scale-100" />
+                    <div key={i} className="group relative aspect-[3/4] overflow-hidden transition-all duration-700">
+                      <img src={`${hub.img}?q=80&w=2070&auto=format&fit=crop`} className="w-full h-full object-cover contrast-125 saturate-[0.5] group-hover:saturate-100 opacity-80 group-hover:opacity-100 transition-all duration-1000 scale-110 group-hover:scale-100" />
                       <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90" />
-                      <div className="absolute bottom-12 left-12">
+                      <div className="absolute bottom-12 left-12 right-12">
                         <span className="text-dossier block mb-2">{hub.role}</span>
-                        <h3 className="text-industrial text-4xl text-foreground">{hub.city}</h3>
+                        <h3 className="text-industrial text-4xl text-foreground mb-4">{hub.city}</h3>
+                        <p className="text-muted text-[14px] uppercase font-bold tracking-widest leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-700 translate-y-4 group-hover:translate-y-0 relative border-l border-accent/30 pl-4">{hub.desc}</p>
                       </div>
                     </div>
                   ))}
@@ -264,7 +321,7 @@ export default function Home() {
                   <RevealItem>
                     <span className="text-dossier block mb-12 border-l-2 border-accent pl-4">Restoration Protocol // 2026</span>
                     <h2 className="text-industrial text-5xl sm:text-7xl text-foreground leading-[1.1] mb-12">THE <br /> <span className="text-accent italic font-light">PROCESS.</span></h2>
-                    <p className="text-muted text-xs uppercase tracking-widest leading-relaxed max-w-sm">
+                    <p className="text-muted text-[14px] uppercase tracking-widest leading-relaxed max-w-sm">
                       Every commission follows a clinical restoration protocol designed to maximize mechanical integrity while preserving the machine's historical soul.
                     </p>
                   </RevealItem>
@@ -274,16 +331,16 @@ export default function Home() {
               <div className="lg:col-span-8">
                 <SmoothReveal stagger delay={0.3} className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-24">
                   {[
-                    { step: '01', title: 'Forensic Audit', desc: 'Disassembly and cataloging of every mechanical component to verify period-correct metallurgy.' },
-                    { step: '02', step_name: 'Metal & Core', desc: 'Structural restoration of the monocoque using carbon-fiber weaving and titanium structural bonding.' },
-                    { step: '03', title: 'Analog Tuning', desc: 'Master-level calibration of engines and transmission systems to Zenith high-performance standards.' },
-                    { step: '04', title: 'Archive Release', desc: 'Final technical documentation and digital archival before delivery to the global registry.' }
+                    { step: '01', title: 'Forensic Metal Audit', desc: 'Complete disassembly down to the bare monocoque. We catalog and x-ray every mechanical component to verify period-correct metallurgy, identifying micro-fractures in legacy castings before they fail.' },
+                    { step: '02', step_name: 'Structural Reinforcement', desc: 'Structural restoration of the chassis using aerospace-grade carbon-fiber weaving and titanium structural bonding. This eliminates the torquing and flex issues inherent in classic architecture, allowing the frame to handle modern horsepower.' },
+                    { step: '03', title: 'Analog Calibration', desc: 'Master-level tuning of the naturally aspirated engines and gated transmission systems. We blueprint the block to exacting Zenith high-performance standards, prioritizing throttle response and auditory violence.' },
+                    { step: '04', title: 'Archival & Delivery', desc: 'Final aerodynamic testing, deep cosmetic correction, and technical documentation. The commission is inducted into the global registry alongside its immutable service ledger before private delivery.' }
                   ].map((item, i) => (
                     <RevealItem key={i}>
                       <div className="relative pl-12 border-l border-black/5 h-full">
                         <span className="text-accent text-industrial text-3xl block mb-6">{item.step}</span>
                         <h4 className="text-industrial text-xl text-foreground mb-4">{item.title || item.step_name}</h4>
-                        <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed">{item.desc}</p>
+                        <p className="text-muted text-[14px] uppercase tracking-widest leading-relaxed">{item.desc}</p>
                       </div>
                     </RevealItem>
                   ))}

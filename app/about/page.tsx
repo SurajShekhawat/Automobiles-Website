@@ -27,7 +27,7 @@ export default function About() {
                   </h1>
                 </RevealItem>
                 <RevealItem>
-                  <p className="text-outfit text-muted text-[11px] uppercase font-bold tracking-[0.2em] leading-relaxed max-w-sm mb-12">
+                  <p className="text-outfit text-muted text-[14px] uppercase font-bold tracking-[0.2em] leading-relaxed max-w-sm mb-12">
                     The chronicle of Zenith is not merely a timeline of dates, but a preservation of mechanical soul. Founded in 1924, our mission remains unchanged: to curate the intersection of engineering and emotion.
                   </p>
                 </RevealItem>
@@ -36,8 +36,8 @@ export default function About() {
              <div className="flex-1 space-y-32">
                 <RevealItem>
                   <div className="relative aspect-video bg-surface overflow-hidden border border-black/10">
-                     <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale opacity-80" />
-                     <div className="absolute top-12 left-12 text-dossier bg-background/50 backdrop-blur-sm p-4">Station No. 001 // Restoration Lab</div>
+                     <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover contrast-125 saturate-[0.8] opacity-90" />
+                     <div className="absolute top-12 left-12 text-dossier bg-background/80 backdrop-blur-sm p-4">Station No. 001 // Restoration Lab</div>
                   </div>
                 </RevealItem>
 
@@ -45,13 +45,13 @@ export default function About() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                      <div className="p-12 border border-black/10 bg-surface/30 backdrop-blur-sm">
                         <span className="text-dossier block mb-8 underline underline-offset-8">01. Originality</span>
-                        <p className="text-outfit text-muted text-[11px] uppercase font-bold tracking-[0.2em] leading-relaxed">
+                        <p className="text-outfit text-muted text-[14px] uppercase font-bold tracking-[0.2em] leading-relaxed">
                           We believe in period-correct metallurgy. Every machine processed in our atelier is restored using materials and techniques authentic to its specific era of engineering.
                         </p>
                      </div>
                      <div className="p-12 border border-black/10 bg-surface/30 backdrop-blur-sm">
                         <span className="text-dossier block mb-8 underline underline-offset-8">02. Evolution</span>
-                        <p className="text-outfit text-muted text-[11px] uppercase font-bold tracking-[0.2em] leading-relaxed">
+                        <p className="text-outfit text-muted text-[14px] uppercase font-bold tracking-[0.2em] leading-relaxed">
                           Legacy is not static. Our Innovation Lab explores how performance heritage can thrive in a carbon-neutral future without sacrificing the visceral mechanical experience.
                         </p>
                      </div>
@@ -59,9 +59,9 @@ export default function About() {
                 </RevealItem>
 
                 <RevealItem>
-                  <div className="relative aspect-square sm:aspect-[21/9] bg-surface overflow-hidden border border-black/10">
-                     <img src="https://images.unsplash.com/photo-1541443131876-44b03de101c5?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale opacity-20 hover:opacity-100 transition-all duration-[2s]" />
-                     <div className="absolute bottom-12 right-12 text-industrial text-8xl text-accent/10 italic">THE LAB</div>
+                  <div className="relative aspect-square sm:aspect-[21/9] bg-surface overflow-hidden border border-black/10 transition-all duration-700 group">
+                     <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover contrast-125 saturate-[0.7] opacity-90 group-hover:opacity-100 group-hover:saturate-100 group-hover:scale-105 transition-all duration-[2s]" />
+                     <div className="absolute bottom-12 right-12 text-industrial text-8xl text-accent/10 italic font-light outline-text">THE LAB</div>
                   </div>
                 </RevealItem>
              </div>

@@ -6,10 +6,10 @@ import Footer from "@/components/Footer";
 import SmoothReveal, { RevealItem } from "@/components/SmoothReveal";
 
 const inventory = [
-  { id: "01", name: "Apex Carbon", type: "Hypercar", year: "2026", image: "https://images.unsplash.com/photo-1621135802920-133df287f89c?q=80&w=2070&auto=format&fit=crop" },
+  { id: "01", name: "Apex Carbon", type: "Hypercar", year: "2026", image: "https://images.unsplash.com/photo-1544883617-640add7af993?q=80&w=2070&auto=format&fit=crop" },
   { id: "02", name: "Silver Arrow", type: "GT", year: "2025", image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070&auto=format&fit=crop" },
-  { id: "03", name: "Obsidian E", type: "Electric Sedan", year: "2026", image: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=2070&auto=format&fit=crop" },
-  { id: "04", name: "Zenith V12", type: "Heritage", year: "1964", image: "https://images.unsplash.com/photo-1611016186353-9af58c69a533?q=80&w=2070&auto=format&fit=crop" },
+  { id: "03", name: "Obsidian E", type: "Electric Sedan", year: "2026", image: "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=2070&auto=format&fit=crop" },
+  { id: "04", name: "Zenith V12", type: "Heritage", year: "1964", image: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=2070&auto=format&fit=crop" },
 ];
 
 export default function Inventory() {
@@ -34,7 +34,7 @@ export default function Inventory() {
                  </div>
                  <div className="text-right max-w-sm">
                     <p className="text-dossier mb-6">Total Registry: 04 Machines</p>
-                    <p className="text-outfit text-muted text-[11px] uppercase font-bold tracking-[0.2em] leading-relaxed">
+                    <p className="text-outfit text-muted text-[14px] uppercase font-bold tracking-[0.2em] leading-relaxed">
                       Authorized commissions currently available for private acquisition. Every machine in the registry has been verified for mechanical purity.
                     </p>
                  </div>
@@ -48,7 +48,7 @@ export default function Inventory() {
                     <img 
                       src={car.image} 
                       alt={car.name} 
-                      className="absolute inset-0 h-full w-full object-cover grayscale opacity-20 group-hover:opacity-100 group-hover:scale-110 transition-all duration-[1.5s]" 
+                      className="absolute inset-0 h-full w-full object-cover contrast-125 saturate-[0.7] opacity-90 group-hover:opacity-100 group-hover:saturate-100 group-hover:scale-110 transition-all duration-[1.5s]" 
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90" />
                     
@@ -60,7 +60,7 @@ export default function Inventory() {
                        <span className="text-dossier block mb-4">{car.year} // {car.type}</span>
                        <h2 className="text-industrial text-4xl text-foreground group-hover:text-accent transition-colors">{car.name}</h2>
                        <div className="h-0 group-hover:h-12 transition-all duration-500 overflow-hidden mt-6">
-                          <Link href="/contact" className="text-dossier text-[8px] underline decoration-accent/20">Init. Acquisition Protocol</Link>
+                          <Link href="/contact" className="text-dossier text-[14px] underline decoration-accent/20">Init. Acquisition Protocol</Link>
                        </div>
                     </div>
                   </div>

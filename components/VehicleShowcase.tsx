@@ -5,7 +5,7 @@ const vehicles = [
     id: "01",
     name: "Apex Carbon",
     type: "Hypercar",
-    image: "https://images.unsplash.com/photo-1621135802920-133df287f89c?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1544883617-640add7af993?q=80&w=2070&auto=format&fit=crop",
     desc: "A silent revolution in grand touring. Engineering perfected for the modern era of sustainable luxury.",
   },
   {
@@ -19,14 +19,14 @@ const vehicles = [
     id: "03",
     name: "Obsidian E",
     type: "Electric Heritage",
-    image: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=2070&auto=format&fit=crop",
     desc: "Mechanical purity refined for the next century of high-performance mobility.",
   },
   {
     id: "04",
     name: "Zenith V12",
     type: "Legendary Coupe",
-    image: "https://images.unsplash.com/photo-1611016186353-9af58c69a533?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=2070&auto=format&fit=crop",
     desc: "A timeless silhouette restored with surgical precision and modern materials.",
   },
   {
@@ -40,7 +40,7 @@ const vehicles = [
     id: "06",
     name: "Aurora Concept",
     type: "Future GT",
-    image: "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop",
     desc: "A glimpse into the next decade of Zenith design. Fluidity meets structural integrity.",
   },
 ];
@@ -77,7 +77,7 @@ export default function VehicleShowcase() {
                 <img
                   src={v.image}
                   alt={v.name}
-                  className="absolute inset-0 h-full w-full object-cover grayscale opacity-20 group-hover:opacity-100 group-hover:scale-110 transition-all duration-[1s]"
+                  className="absolute inset-0 h-full w-full object-cover contrast-125 saturate-[0.7] opacity-90 group-hover:opacity-100 group-hover:saturate-100 group-hover:scale-110 transition-all duration-[1s]"
                 />
 
                 {/* Info Overlay */}
@@ -94,12 +94,12 @@ export default function VehicleShowcase() {
                     </div>
 
                     <div className="h-0 group-hover:h-24 transition-all duration-700 overflow-hidden">
-                      <p className="text-muted text-[11px] uppercase tracking-widest leading-relaxed">
+                      <p className="text-muted text-[14px] uppercase tracking-widest leading-relaxed">
                         {v.desc}
                       </p>
                       <div className="mt-6 flex gap-8">
-                        <span className="text-dossier text-[8px] underline">Spec-Sheet // Arch</span>
-                        <span className="text-dossier text-[8px] underline">Inquiry // Ref</span>
+                        <span className="text-dossier text-[14px] underline">Spec-Sheet // Arch</span>
+                        <span className="text-dossier text-[14px] underline">Inquiry // Ref</span>
                       </div>
                     </div>
                   </div>
