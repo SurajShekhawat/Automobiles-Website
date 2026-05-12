@@ -64,7 +64,7 @@ export default function Navbar() {
           <div className="flex items-center gap-6">
             {/* Login Button */}
             <a
-              href="https://app.valtrixautomotive.ca"
+              href="https://app.valtrixautomotive.ca/user/login"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 border border-accent text-accent text-dossier text-[11px] hover:bg-accent hover:text-background transition-all duration-400 uppercase tracking-widest group"
