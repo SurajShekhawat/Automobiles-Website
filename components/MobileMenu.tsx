@@ -154,7 +154,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 <div className="flex items-end justify-between">
                   <div>
                     <p className="text-dossier text-[14px] text-foreground mb-2">
-                      ZENITH ARCHIVE v2.0
+                      VALTRIX AUTOMOTIVE v2.0
                     </p>
                     <div className="flex gap-6">
                       {["London", "Milan", "Tokyo"].map((city) => (

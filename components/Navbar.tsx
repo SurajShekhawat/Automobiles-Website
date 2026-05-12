@@ -38,7 +38,7 @@ export default function Navbar() {
               href="/"
               className="text-industrial text-2xl sm:text-3xl text-foreground hover:italic transition-all duration-500 uppercase tracking-widest"
             >
-              ZENITH
+              VALTRIX <span className="text-accent">AUTOMOTIVE</span>
             </Link>
           </motion.div>
 
@@ -61,11 +61,17 @@ export default function Navbar() {
             ))}
           </div>
 
-          <div className="flex items-center gap-8">
-            <div className="hidden md:flex flex-col text-[14px] font-bold tracking-[0.4em] uppercase text-accent/60 text-right">
-              Archive v.2.0 <br />
-              <span className="text-accent underline decoration-accent/30">Access Restricted</span>
-            </div>
+          <div className="flex items-center gap-6">
+            {/* Login Button */}
+            <a
+              href="https://app.valtrixautomotive.ca"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 border border-accent text-accent text-dossier text-[11px] hover:bg-accent hover:text-background transition-all duration-400 uppercase tracking-widest group"
+            >
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-accent group-hover:bg-background transition-colors" />
+              Client Login
+            </a>
 
             {/* Animated hamburger */}
             <motion.button

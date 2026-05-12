@@ -6,7 +6,7 @@ export default function Footer() {
          <div className="mx-auto max-w-[1920px] relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24 pb-24 border-b border-black/5">
                <div className="col-span-1 lg:col-span-1">
-                  <div className="text-industrial text-2xl text-foreground mb-6 uppercase tracking-widest">ZENITH</div>
+                  <div className="text-industrial text-2xl text-foreground mb-6 uppercase tracking-widest">VALTRIX AUTOMOTIVE</div>
                   <p className="text-muted text-[14px] uppercase tracking-widest leading-relaxed max-w-[200px]">
                      Custodian of automotive performance and mechanical heritage since 1924.
                   </p>
@@ -43,7 +43,7 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-               <span className="text-dossier text-[14px] opacity-40">© 2026 ZENITH ARCHIVE. ALL COMMISSIONS RESERVED.</span>
+               <span className="text-dossier text-[14px] opacity-40">© 2026 VALTRIX AUTOMOTIVE. ALL COMMISSIONS RESERVED.</span>
                <div className="flex gap-12">
                   <span className="text-dossier text-[14px] opacity-40">Privacy Protocol</span>
                   <span className="text-dossier text-[14px] opacity-40">Terms of Acquisition</span>

@@ -7,7 +7,7 @@ import { useState, useEffect, useCallback } from "react";
 const slides = [
   {
     id: "01",
-    title: "ZENITH",
+    title: "VALTRIX",
     subtitle: "ARCHIVE.",
     label: "Heritage Commission",
     desc: "We do not build cars. We preserve the visceral, terrifying brilliance of the mechanical era.",
@@ -15,7 +15,7 @@ const slides = [
     ctaHref: "/inventory",
     image: "https://images.unsplash.com/photo-1685935990930-75c061dbb979?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     year: "EST. 1924",
-    ref: "ZA-001",
+    ref: "VA-001",
   },
   {
     id: "02",
@@ -27,7 +27,7 @@ const slides = [
     ctaHref: "/about",
     image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2560&auto=format&fit=crop",
     year: "LAB 04",
-    ref: "ZA-002",
+    ref: "VA-002",
   },
   {
     id: "03",
@@ -39,19 +39,19 @@ const slides = [
     ctaHref: "/contact",
     image: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=2560&auto=format&fit=crop",
     year: "GLOBAL",
-    ref: "ZA-003",
+    ref: "VA-003",
   },
   {
     id: "04",
     title: "APEX",
     subtitle: "CARBON.",
     label: "Current Registry",
-    desc: "Every commission in the Zenith registry is verified for mechanical purity before archival and release.",
+    desc: "Every commission in the Valtrix registry is verified for mechanical purity before archival and release.",
     cta: "View Registry",
     ctaHref: "/inventory",
     image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2560&auto=format&fit=crop",
     year: "2026",
-    ref: "ZA-004",
+    ref: "VA-004",
   },
 ];
 

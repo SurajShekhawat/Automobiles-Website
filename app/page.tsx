@@ -176,7 +176,7 @@ export default function Home() {
               <RevealItem>
                  <div className="flex items-center gap-4 mb-24">
                    <div className="h-px w-32 bg-accent" />
-                   <span className="text-dossier font-bold text-accent">THE ZENITH DOCTRINE</span>
+                   <span className="text-dossier font-bold text-accent">THE VALTRIX DOCTRINE</span>
                  </div>
               </RevealItem>
               <RevealItem>
@@ -394,7 +394,7 @@ export default function Home() {
             style={{ y: useTransform(scrollY, [0, 10000], [0, 400]) }}
             className="absolute top-0 right-24 h-full pointer-events-none opacity-[0.03]"
           >
-            <span className="text-industrial text-[10rem] whitespace-nowrap [writing-mode:vertical-rl]">ZENITH AUTOMOTIVE GROUP</span>
+            <span className="text-industrial text-[10rem] whitespace-nowrap [writing-mode:vertical-rl]">VALTRIX AUTOMOTIVE GROUP</span>
           </motion.div>
         </section>
       </main>

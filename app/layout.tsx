@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ZENITH — Automotive Heritage & Excellence",
+  title: "VALTRIX AUTOMOTIVE — Heritage & Excellence",
   description: "Curators of the world's finest automotive engineering since 1924. Experience the intersection of machinery and legacy.",
 };
 
