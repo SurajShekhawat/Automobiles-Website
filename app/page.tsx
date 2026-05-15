@@ -12,11 +12,11 @@ export default function Home() {
   const { scrollY } = useScroll();
 
   return (
-    <div className="flex flex-col min-h-screen bg-background text-foreground selection:bg-accent selection:text-background relative">
+    <div className="flex flex-col bg-background text-foreground selection:bg-accent selection:text-background relative">
       <div className="grain" />
       <Navbar />
 
-      <main className="flex-1">
+      <main>
         <Hero />
 
         {/* Heritage Section (Declassified Document style) */}

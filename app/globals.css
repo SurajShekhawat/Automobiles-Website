@@ -6,6 +6,15 @@ html.lenis body {
   height: auto;
 }
 
+/* Disable native rubber-band / bounce so Lenis has full scroll control */
+html {
+  overscroll-behavior: none;
+}
+
+body {
+  overscroll-behavior: none;
+}
+
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
 }
