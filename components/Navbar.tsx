@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import MobileMenu from "./MobileMenu";
@@ -36,9 +37,16 @@ export default function Navbar() {
           >
             <Link
               href="/"
-              className="text-industrial text-2xl sm:text-3xl text-foreground hover:italic transition-all duration-500 uppercase tracking-widest"
+              className="text-industrial text-2xl sm:text-3xl text-foreground hover:opacity-80 transition-opacity duration-500 flex items-center"
             >
-              VALTRIX <span className="text-accent">AUTOMOTIVE</span>
+              <Image 
+                src="/valtrix_automotive_new.png" 
+                alt="Valtrix Automotive Logo" 
+                width={150} 
+                height={40} 
+                className="h-10 w-auto object-contain"
+                priority
+              />
             </Link>
           </motion.div>
 

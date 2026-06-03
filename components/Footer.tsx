@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
    return (
       <footer className="bg-background border-t border-black/5 pt-24 pb-12 px-6 sm:px-12 relative overflow-hidden">
@@ -6,7 +8,15 @@ export default function Footer() {
          <div className="mx-auto max-w-[1920px] relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24 pb-24 border-b border-black/5">
                <div className="col-span-1 lg:col-span-1">
-                  <div className="text-industrial text-2xl text-foreground mb-6 uppercase tracking-widest">VALTRIX AUTOMOTIVE</div>
+                  <div className="mb-6">
+                     <Image 
+                        src="/valtrix_automotive_new.png" 
+                        alt="Valtrix Automotive Logo" 
+                        width={200} 
+                        height={50} 
+                        className="h-12 w-auto object-contain"
+                     />
+                  </div>
                   <p className="text-muted text-[14px] uppercase tracking-widest leading-relaxed max-w-[200px]">
                      Custodian of automotive performance and mechanical heritage since 1924.
                   </p>
